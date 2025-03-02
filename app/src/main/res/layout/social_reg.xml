@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/signup_bg"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="#D32F2F"
+        android:gravity="center"
+        android:text="Enter the details correctly"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingTop="40dp"
+        android:paddingRight="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:text="Social Login"
+            android:textColor="#ebebeb"
+            android:textSize="20dp" />
+
+
+        <EditText
+            android:id="@+id/f_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/group_top"
+            android:ellipsize="start"
+            android:gravity="center_horizontal"
+            android:hint="First Name"
+            android:inputType="textCapWords|textPersonName"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:singleLine="true"
+            android:textColorHighlight="@color/white"
+            android:textSize="15sp" />
+
+
+        <EditText
+            android:id="@+id/l_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/group_row"
+            android:ellipsize="start"
+            android:gravity="center_horizontal"
+            android:hint="Last Name"
+            android:inputType="textCapWords"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHighlight="@color/white"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/group_row"
+            android:ellipsize="start"
+            android:gravity="center_horizontal"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="15sp" />
+
+        <!--<android.support.design.widget.TextInputLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_marginBottom="5dp">-->
+        <!--<EditText android:id="@+id/input_confirm"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:inputType="textPassword"-->
+
+        <!--android:hint="Confirm"-->
+        <!--android:textColorHint="@color/white"/>-->
+        <!--</android.support.design.widget.TextInputLayout>-->
+
+        <EditText
+            android:id="@+id/input_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/group_row"
+            android:ellipsize="start"
+            android:gravity="center_horizontal"
+            android:hint="Mobile"
+            android:inputType="phone"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHighlight="@color/white"
+            android:textSize="15sp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/group_bottom"
+            android:ellipsize="start"
+            android:gravity="center_horizontal"
+            android:hint="City"
+            android:inputType="text"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="15sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_gsignup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/btn_plain_white_bg"
+            android:onClick="account"
+            android:text="Create Account"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

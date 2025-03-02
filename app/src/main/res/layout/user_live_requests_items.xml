@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cb_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:id="@+id/hotel_booking_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="5"
+                    android:orientation="vertical"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/date_post" />
+
+                        <com.cheqin.booking.utils.CustomFontTextview
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Check In"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#000000" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <com.cheqin.booking.utils.CustomFontTextview
+                            android:id="@+id/uckin_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="30"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/red" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.cheqin.booking.utils.CustomFontTextview
+                                android:id="@+id/uckin_month"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="Dec"
+                                android:textColor="#444343"
+                                android:textSize="12sp" />
+
+                            <com.cheqin.booking.utils.CustomFontTextview
+                                android:id="@+id/uckin_year"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="2015"
+                                android:textColor="#444343"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <com.cheqin.booking.utils.CustomFontTextview
+                            android:id="@+id/chkin_hh"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="00:00"
+                            android:textColor="#444343"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="2"-->
+                <!--android:orientation="vertical"-->
+                <!--android:weightSum="5">-->
+
+                <!--<View-->
+                <!--android:layout_width="2dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="2.5"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:background="#dad9d9" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:textColor="#ffa500"-->
+                <!--android:text="2N"/>-->
+
+                <!--<View-->
+                <!--android:layout_width="2dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="2.5"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:background="#dad9d9" />-->
+
+                <!--</LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_weight="5"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/date_post" />
+
+                        <com.cheqin.booking.utils.CustomFontTextview
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Check Out"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <com.cheqin.booking.utils.CustomFontTextview
+                            android:id="@+id/uckout_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="02"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/red" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="5dp">
+
+                            <com.cheqin.booking.utils.CustomFontTextview
+                                android:id="@+id/uckout_month"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Dec"
+                                android:textColor="#444343"
+                                android:textSize="12sp" />
+
+                            <com.cheqin.booking.utils.CustomFontTextview
+                                android:id="@+id/uckout_year"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2015"
+                                android:textColor="#444343"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <com.cheqin.booking.utils.CustomFontTextview
+                            android:id="@+id/chkout_hh"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text="00:00"
+                            android:textColor="#444343"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#dad9d9" />
+
+            <LinearLayout
+                android:id="@+id/rooms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical">
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Rooms"
+                        android:textColor="#80000000"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/room_icon" />
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:id="@+id/user_rooms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="1"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/red" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical">
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Adults"
+                        android:textColor="#80000000"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/adults_icon" />
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:id="@+id/user_adults"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="2"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/red" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Children"
+                        android:textColor="#80000000"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/child_icon" />
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:id="@+id/user_childrens"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="0"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/red" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#dad9d9" />
+
+            <LinearLayout
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/txt_city"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/location_icon" />
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:id="@+id/user_locality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_horizontal"
+                        android:maxLines="2"
+                        android:textColor="#444343"
+                        tools:text="Hampinagar, Bangalore,Hampinagar" />
+
+                </LinearLayout>
+
+                <com.cheqin.booking.utils.CustomFontToolbarText
+                    android:id="@+id/roomType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#444343"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    tools:text="Selected Room : Deluxe" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/see_offers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="Click to See Offers"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_exhibition_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.cheqin.booking.utils.CustomFontTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Event Date"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:id="@+id/exhibition_checkin_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:text="20 Apr"
+                        android:textColor="@color/utel_color"
+                        android:textSize="18sp" />
+
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:id="@+id/exhibition_checkin_date1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:text="21 May"
+                        android:textColor="@color/utel_color"
+                        android:textSize="18sp"
+                        android:visibility="gone"
+                        tools:visibility="visible" />
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:id="@+id/exhibition_checkin_date2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:text="22 May"
+                        android:textColor="@color/utel_color"
+                        android:textSize="18sp"
+                        android:visibility="gone"
+                        tools:visibility="visible" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dad9d9" />
+
+            <LinearLayout
+                android:id="@+id/ll_exhibition_guests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <com.cheqin.booking.utils.CustomFontTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Guests/Attendees"
+                    android:textColor="#80000000"
+                    android:textSize="18sp" />
+
+
+                <com.cheqin.booking.utils.CustomFontTextview
+                    android:id="@+id/tv_exhibtion_guest_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:text="1"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/red"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dad9d9" />
+
+            <LinearLayout
+                android:id="@+id/ll_exhibition_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/location_icon" />
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:id="@+id/tv_exhibition_locality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:gravity="center_horizontal"
+                        android:maxLines="2"
+                        android:textColor="#444343"
+                        tools:text="Hampinagar, Bangalore,Hampinagar sdjskdjksjdkjsd\nsjdkjskdjskdj" />
+
+                </LinearLayout>
+
+                <com.cheqin.booking.utils.CustomFontTextview
+                    android:id="@+id/tv_exhibition_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    tools:text="Banquet Hall" />
+
+
+                <com.cheqin.booking.utils.CustomFontTextview
+                    android:id="@+id/tv_exhibition_budget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/utel_color"
+                    android:textSize="18sp"
+                    tools:text="Budget Rs33333" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_exhibition_see_offers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="Click to See Offers"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

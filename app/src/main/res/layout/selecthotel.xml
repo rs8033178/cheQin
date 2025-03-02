@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/errormsg1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:background="#D32F2F"
+        android:gravity="center"
+        android:text="Enter the details correctly"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/hotelselect_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/hotel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/group_row"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:ellipsize="start"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="Enter your Hotel Name"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/entercity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/group_row"
+                android:ellipsize="start"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="Enter City"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:visibility="gone" />
+
+
+            <EditText
+                android:id="@+id/enterhotelname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/entercity"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/group_row"
+                android:ellipsize="start"
+                android:gravity="center_horizontal"
+                android:hint="Enter your Hotel Name"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColorHighlight="@color/white"
+                android:visibility="gone" />
+
+
+            <fragment
+                android:id="@+id/hotelmap"
+                class="com.cheqin.booking.utils.WorkAroundMapFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="350dp"
+                android:layout_below="@+id/enterhotelname"
+                android:layout_marginTop="80dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hotelmap"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/savehotel"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight=".30"
+                    android:background="@drawable/btn_plain_green_bg"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:visibility="gone"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/hotelnotfound"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight=".70"
+                    android:background="@drawable/btn_login_plain_bg"
+                    android:text="Couldn't find your Hotel?"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

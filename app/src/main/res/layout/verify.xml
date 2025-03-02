@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ebebeb">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <include layout="@layout/toolbar"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Verifying your Account"
+                android:id="@+id/textView3"
+                android:layout_above="@+id/edittext"
+                android:layout_marginTop="30dp"
+                android:visibility="gone"
+                android:layout_marginBottom="80dp"
+                android:layout_gravity="center_horizontal" />
+
+            <com.cheqin.booking.utils.CustomFontTextview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/mobileNumberTxt"
+                android:textColor="#000000"
+                android:text="Enter the Verification code which is sent to your mobile number"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:maxLines="1"
+                android:maxLength="4"
+                android:hint="Enter Code"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/edit"
+                android:layout_marginRight="50dp"
+                android:id="@+id/verify_code"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_login_plain_bg"
+        android:id="@+id/verifybutton"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
