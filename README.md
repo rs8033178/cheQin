@@ -8,14 +8,6 @@ The guest can post a request that includes the check-in/out time, hotel class, p
 - **iOS:** [CheQIn on App Store](https://apps.apple.com/us/app/cheqin-bargain-for-hotel-stay/id6443889147)  
 - **Website:** [CheQIn.club](https://cheqin.club/)
 
-### **Map View**
-CheQIn.club displays the top three lowest offers on the Google map, along with the distance between them.
-
-### **Bargained Offers**
-Get real-time access to the top three lowest offers from hoteliers (or related stays) by creating competition among them.
-
----
-
 ## **Screenshots**
 
 <table>
@@ -23,6 +15,7 @@ Get real-time access to the top three lowest offers from hoteliers (or related s
     <td><img src="screenshots/c1.png" width="300"/></td>
     <td><img src="screenshots/c2.png" width="300"/></td>
     <td><img src="screenshots/c3.png" width="300"/></td>
+    <td><img src="screenshots/c9.png" width="300"/></td>
   </tr>
    <tr>
     <td><img src="screenshots/c4.png" width="300"/></td>
@@ -34,3 +27,11 @@ Get real-time access to the top three lowest offers from hoteliers (or related s
     <td><img src="screenshots/c10.png" width="300"/></td>
   </tr>
 </table>
+
+### **Map View**
+CheQIn.club displays the top three lowest offers on the Google map, along with the distance between them.
+
+### **Bargained Offers**
+Get real-time access to the top three lowest offers from hoteliers (or related stays) by creating competition among them.
+
+---
