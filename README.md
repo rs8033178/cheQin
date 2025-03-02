@@ -27,6 +27,8 @@ The guest can post a request that includes the check-in/out time, hotel class, p
   </tr>
 </table>
 
+<img src="screenshots/c11.png" width="300"/>
+
 ### **Map View**
 CheQIn.club displays the top three lowest offers on the Google map, along with the distance between them.
 
