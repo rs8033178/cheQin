@@ -1,0 +1,170 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+//one signal integration
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/'}
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.12.5, 0.99.99]'
+    }
+}
+//apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        multiDexEnabled true
+        applicationId "com.cheqin.booking"
+        minSdkVersion 21
+        targetSdkVersion 31
+        versionCode 2
+        versionName "1.0.1"
+        // TODO: Please update the OneSignal ID below to yours!
+        // TODO: Please update the OneSignal ID below to yours!
+        manifestPlaceholders = [
+                onesignal_app_id               : '7f9ef713-2d3c-4752-a4f8-f75380ac6744',
+                // Project number pulled from dashboard, local value is ignored.
+                onesignal_google_project_number: 'Utel'
+        ]
+        /*  manifestPlaceholders = [onesignal_app_id: '23d05262-ab39-436f-b9c1-73e88bfe07c4',
+                                // Project number pulled from dashboard, local value is ignored.
+                                onesignal_google_project_number: 'utel']*/
+        //onesignal_app_id: '7f9ef713-2d3c-4752-a4f8-f75380ac6744'
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            debuggable true
+            minifyEnabled false
+        }
+
+        /**
+         * The `initWith` property allows you to copy configurations from other build types,
+         * then configure only the settings you want to change. This one copies the debug build
+         * type, and then changes the manifest placeholder and application ID.
+         */
+        staging {
+            initWith debug
+            debuggable true
+            manifestPlaceholders = [hostName: "internal.example.com"]
+            applicationIdSuffix ".debugStaging"
+        }
+    }
+
+    sourceSets {
+        main {
+            assets.srcDirs = ['src/main/assets', 'src/main/assets/', 'src/main/assets/dash_anim']
+            res.srcDirs = ['src/main/res', 'src/main/assets/fonts', 'src/main/res/anim']
+            java.srcDirs = ['src/main/java', 'src/main/java/LoginandRegistration']
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/LICENSE.txt'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        //If you want to continue even if errors found use following line
+        abortOnError false
+    }
+
+}
+
+
+dependencies {
+    def nav_version = "2.2.0"
+    def lifecycle_version = "2.2.0"
+
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.facebook.android:facebook-android-sdk:4.6.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.android.libraries.places:places:2.2.0'
+
+    implementation 'org.apache.httpcomponents:httpmime:4.5.6'
+    implementation 'com.google.android.gms:play-services-gcm:17.0.0'
+    implementation "biz.laenger.android:vpbs:0.0.5"
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    implementation('cn.pedant.sweetalert:library:1.3')
+    implementation('org.adw.library:discrete-seekbar:1.0.0')
+    implementation('com.yalantis:phoenix:1.2.3')
+    implementation('fr.avianey.com.viewpagerindicator:library:2.4.1@aar')
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.0.0'
+
+    implementation('com.github.ksoichiro:android-observablescrollview:1.6.0')
+
+    implementation('com.koushikdutta.ion:ion:2.1.6')
+    implementation 'com.google.firebase:firebase-core:17.2.2'
+
+    // OneSignal SDK
+    implementation 'com.onesignal:OneSignal:3.11.3'
+    implementation "com.google.firebase:firebase-messaging:20.1.0"
+    implementation 'com.github.nitrico.mapviewpager:mapviewpager:1.0.0'
+    implementation 'org.jsoup:jsoup:1.10.2'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.wdullaer:materialdatetimepicker:4.2.3'
+
+    implementation "androidx.navigation:navigation-fragment:$nav_version"
+    implementation "androidx.navigation:navigation-ui:$nav_version"
+    implementation 'com.github.joielechong:countrycodepicker:2.4.1'
+    implementation 'com.github.aabhasr1:OtpView:v1.1.2-ktx'
+
+    //implementation project(':datepicker')
+    implementation 'com.github.kizitonwose:CalendarView:0.3.2'
+
+
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+
+    implementation 'com.squareup.retrofit2:retrofit:2.7.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.github.techery:properratingbar:0.0.5'
+
+    implementation 'com.google.android.play:core:1.6.4'
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:17.3.0'
+
+    implementation 'com.squareup.okhttp3:okhttp:4.2.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.2.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.0'
+    implementation 'com.google.android.material:material:1.2.0-alpha04'
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'com.google.firebase:firebase-analytics:17.2.2'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+    implementation 'androidx.core:core-ktx:1.1.0'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.3"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.3"
+}
+apply plugin: 'io.fabric'
+

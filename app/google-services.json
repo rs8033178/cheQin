@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "892580205712",
+    "firebase_url": "https://utel-1573742421513.firebaseio.com",
+    "project_id": "utel-1573742421513",
+    "storage_bucket": "utel-1573742421513.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892580205712:android:4b8fbafeb05d46034e7415",
+        "android_client_info": {
+          "package_name": "com.cheqin.booking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "892580205712-nrf83of26mprvl2m7grta5klqmlfukjp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cheqin.booking",
+            "certificate_hash": "0793c16598b32777178edf168946675899845cad"
+          }
+        },
+        {
+          "client_id": "892580205712-0u3htcn2goehu28iooklm8luv85i9kep.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtUY4zEEY4LWt_CCmn0CFDa_AnTUL5VOg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "892580205712-0u3htcn2goehu28iooklm8luv85i9kep.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
