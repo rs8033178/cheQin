@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/requested_offer"
+            android:title="Requested Offer"/>
+        <item
+            android:id="@+id/request_to_offer"
+            android:title="Request to Offer" />
+
+        <item
+            android:id="@+id/confirm_booking"
+            android:title="Confirm Booking" />
+        <item
+            android:id="@+id/cancel_request"
+            android:title="Cancel Request" />
+        <item
+            android:id="@+id/profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/hotel_profile"
+            android:title="Hotel Profile" />
+
+        <item
+            android:id="@+id/send_feedback"
+            android:title="Send Feedback" />
+        <item
+            android:id="@+id/rate_us"
+            android:title="Rate Us" />
+        <item
+            android:id="@+id/terms_and_conditions"
+            android:title="Terms and Conditions" />
+        <item
+            android:id="@+id/contact_us"
+            android:title="Contact Us"/>
+        <item
+            android:id="@+id/log_out"
+            android:title="Logout" />
+
+    </group>
+
+
+</menu>

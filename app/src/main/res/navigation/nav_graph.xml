@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginNumberFragment">
+    <fragment
+        android:id="@+id/loginNumberFragment"
+        android:name="com.cheqin.booking.activities.login.LoginNumberFragment"
+        android:label="@string/login"
+        tools:layout="@layout/fragment_login_number">
+        <action
+            android:id="@+id/gotoVerifyOtp"
+            app:destination="@id/loginOtpFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginOtpFragment"
+        android:name="com.cheqin.booking.activities.login.LoginOtpFragment"
+        android:label="LoginOtpFragment"
+        tools:layout="@layout/fragment_login_otp">
+        <action
+            android:id="@+id/action_otp_to_signup"
+            app:destination="@id/signupFragment"
+            app:popUpTo="@+id/loginNumberFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.cheqin.booking.activities.login.SignupFragment"
+        android:label="SignupFragment"
+        tools:layout="@layout/fragment_signup" />
+
+</navigation>

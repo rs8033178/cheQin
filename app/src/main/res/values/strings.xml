@@ -1,0 +1,366 @@
+<resources>
+    <string name="app_name">cheQin</string>
+    <string name="action_settings"></string>
+    <!--<string name="app_id">971881702875435</string>-->
+    <string name="app_id">1573126239679708</string>
+    <string name="autocomplete_hint">Enter place name or address</string>
+    <string name="selected_place">Last Selected Place:</string>
+    <string name="clear_text">Clear Text</string>
+    <!-- getString(String, Object...) does not support HTML tags directly, they need to be encoded first.
+    Original string: <b>%1$s</b><br/><i>Place Id: %2$s</i><br/>Address: %3$s<br/>Phone: %4$s<br/>Website: %5$s-->
+    <string name="place_details">&lt;b&gt;%1$s&lt;/b&gt;&lt;br/&gt;&lt;i&gt;Place Id: %2$s&lt;/i&gt;&lt;br/&gt;Address: %3$s&lt;br/&gt;Phone: %4$s&lt;br/&gt;Website: %5$s</string>
+    <string name="logo_desc" />
+    <string name="drawer_open" />
+    <string name="drawer_close" />
+    <string name="navigation_drawer_open"> My Pillows</string>
+    <string name="navigation_drawer_close"> My Pillows</string>
+    <string name="notify">Notification</string>
+    <string name="notifications">Notifications</string>
+    <string name="description" />
+    <string name="notification" />
+    <string name="ambercent">Bargain Now</string>
+    <string name="start_date">Start date</string>
+    <string name="end_date">End date</string>
+    <string name="rs">\u20B9</string>
+    <!--  <string name="agreement">YOU WILL HAVE TO APP %s TOWARDS THE COMMISSION TO Utel.app(12% ON TOTAL) ON OR BEFORE</string>
+    <string name="agreement_confirm">By checking this box you agree to pay the commission of %s to Utel.app on or before</string>
+  -->
+    <string name="agreement_terms">By checking this box you are agreeing to the Terms and Conditions the Privacy Policy and the Cancellation Policy</string>
+    <!-- <string name="terms">myPillows Terms of Use
+
+Revision Date September 10, 2016.
+
+Agreement between customer and myPillows.
+Our app and platform (collecting known as “platform”) are provided solely to assist customers in gathering travel information, determining the availability of travel-related goods and services, making legitimate reservations or otherwise transacting business with travel suppliers, and for no other purposes. The terms "we,” "us,” "our" and "myPillows" refer to myPillows, Inc., a mykingdom company based out of Singapore. The term "you" refers to the customer visiting the platform and/or booking a reservation through us on this platform.
+
+This platform is offered to you conditioned upon your acceptance without modification of all the terms, conditions, and notices set forth below (collectively, the "Terms of Use” or “Agreement").   Please read the Terms of Use carefully, as they contain important information about limitations of liability and resolution of disputes through arbitration rather than in court.  You should also read our privacy policy, hich also governs your use of the platform, and is incorporated by reference in this Agreement. By accessing or using this platform, booking any reservations for travel products or services on this platform, you agree that the Terms of Use then in force shall apply. If you do not agree to the Terms of Use, please do not use or book any reservations through this platform.
+
+Use of the PLATFORM
+As a condition of your use of this platform, you warrant that
+
+1. you are at least 18 years of age;
+2. you possess the legal authority to create a binding legal obligation;
+3. you will use this platform in accordance with these Terms of Use;
+4. you will only use this platform to make legitimate reservations for you or for another person for whom you are legally authorized to act (a “Third Party”);
+5. you will inform such Third Party about the Terms of Use that apply to the reservations you have made on their behalf, including all rules and restrictions applicable thereto;
+6. all information supplied by you on this platform is true, accurate, current and complete; and
+7. if you have a myPillows account, you will safeguard your account information and will supervise and be completely responsible for any use of your account by you and anyone other than you.
+
+We retain the right at our sole discretion to deny access to anyone to this platform and the services we offer, at any time and for any reason, including, but not limited to, for violation of these Terms of Use.
+
+DISPUTES
+myPillows is committed to customer satisfaction, so if you have a problem or dispute, we will try to resolve your concerns with hotel directly.  But if we are unsuccessful, you may pursue claims as explained in this section.
+
+You agree to give us an opportunity to resolve any disputes or claims relating in any way to the platform, any dealings with our customer service agents, any services or products provided, any representations made by us, or our Privacy Policy (“Claims”) by contacting the customer support information provided as part of the platform.
+
+PROHIBITED ACTIVITIES
+The content and information on this platform (including, but not limited to, price and availability of travel services), as well as the infrastructure used to provide such content and information, is proprietary to us or our suppliers and providers. While you may make limited copies of your travel itinerary (and related documents) for travel or service reservations booked through this platform, you agree not to otherwise modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell or re-sell any information, software, products, or services obtained from or through this platform. Additionally, you agree not to:
+
+1. use this platform or its contents for any commercial purpose;
+2. make any speculative, false, or fraudulent reservation or any reservation in anticipation of demand;
+3. access, monitor or copy any content or information of this platform using any robot, spider, scraper or other automated means or any manual process for any purpose without our express written permission;
+4. violate the restrictions in any robot exclusion headers on this platform or bypass or circumvent other measures employed to prevent or limit access to this platform;
+5. take any action that imposes, or may impose, in our discretion, an unreasonable or disproportionately large load on our infrastructure;
+6. deep-link to any portion of this platform (including, without limitation, the purchase path for any travel services) for any purpose without our express written permission; or
+7. "frame", "mirror" or otherwise incorporate any part of this platform into any other platform without our prior written authorization.
+
+You may only use this platform to make legitimate requests to book the products or services offered (each, a "Request"), and shall not use this platform to make any speculative, false or fraudulent Requests, or any Requests in anticipation of demand.
+
+It is a violation of law to place a Request in a false name or with an invalid credit card. Please be aware that even if you do not give us your real name, your Web browser transmits a unique Internet address to us that can be used by law enforcement officials to identify you. Fraudulent users will be prosecuted to the fullest extent of the law.
+
+If your booking or account shows signs of fraud, abuse or suspicious activity, myPillows may cancel any travel or service reservations associated with your name, email address or account, and close any associated myPillows accounts.  If you have conducted any fraudulent activity, myPillows reserves the right to take any necessary legal action and you may be liable for monetary losses to myPillows, including litigation costs and damages.  To contest the cancellation of a booking or freezing or closure of an account, please contact myPillows Customer Service.
+
+SUPPLIER RULES AND RESTRICTIONS
+Additional terms of use will apply to your reservation and purchase of travel-related goods and services that you select. Please read these additional terms of use carefully.  In particular, if you have made the purchase online, please ensure you read the full terms and conditions of carriage issued by the Supplier, which can be found on the Supplier’s platform. You agree to abide by the terms of use of purchase imposed by any supplier with whom you elect to deal, including, but not limited to, payment of all amounts when due and compliance with the supplier\'s rules and restrictions regarding availability and use of fares, products, or services.
+
+We reserve the right to cancel your booking if full payment is not received in a timely fashion.
+
+You acknowledge that some third-party providers offering certain services and/or activities may require you to sign their liability waiver prior to participating in the service and/or activity they offer. You understand that any violation of any such supplier\'s rules and restrictions may result in cancellation of your reservation(s), in your being denied access to the applicable travel product or services, in your forfeiting any monies paid for such reservation(s), and/or in our debiting your account for any costs we incur as a result of such violation.
+
+myPillows is not liable for any costs incurred due to relocation.
+PRIVACY
+myPillows believes in protecting your privacy. Please click here to review our current Privacy Policy, which also governs your use of the platform, and, as stated above, is incorporated by reference, to understand our practices: Privacy Policy.
+
+PAYMENT METHODS
+The Booking Requests can be paid at the hotel directly or through a major credit card unless otherwise expressly stated. The total price will be billed in the currency indicated on the booking screen.
+
+Some banks and credit card companies impose fees for international transactions. If you are making a booking from outside of the United States on a US credit card, your bank may convert the payment amount to your local currency and charge you a conversion fee. This means the amount listed on your credit or bank card statement may be in your local currency and therefore a different figure than the figure shown on the billing summary page for a reservation booked on the platform. In addition, a foreign transaction fee may be assessed if the bank that issued your credit card is located outside of the United States. Booking international travel may be considered to be an international transaction by the bank or card company, since myPillows may pass on your payment to an international travel supplier. The currency exchange rate and foreign transaction fee is determined solely by your bank on the day that they process the transaction. If you have any questions about these fees or the exchange rate applied to your booking, please contact your bank.
+
+INTERNATIONAL TRAVEL
+You are responsible for ensuring that you meet foreign entry requirements and that your travel documents, such as passports and visas (transit, business, tourist, and otherwise), are in order and any other foreign entry requirements are met. myPillows has no special knowledge regarding foreign entry requirements or travel documents. We urge customers to review travel prohibitions, warnings, announcements, and advisories issued by the relevant governments prior to booking travel to international destinations.
+
+Health: Recommended inoculations for travel may change and you should consult your doctor for current recommendations before you depart (especially for the international travel). It is your responsibility to ensure that you meet all health entry requirements, obtain the recommended inoculations, take all recommended medication, and follow all medical advice in relation to your trip.
+
+BY OFFERING RESERVATIONS FOR TRAVEL PRODUCTS TO PARTICULAR INTERNATIONAL DESTINATIONS, myPillows DOES NOT REPRESENT OR WARRANT THAT TRAVEL TO SUCH POINTS IS ADVISABLE OR WITHOUT RISK, AND IS NOT LIABLE FOR DAMAGES OR LOSSES THAT MAY RESULT FROM TRAVEL TO SUCH DESTINATIONS.
+
+NO WARRANTIES
+Unless a Provider has agreed otherwise, all products, services, advice, merchandise and information available through this Site are provided on an "as is," "as available" basis without warranties of any kind, either expressed or implied, other than those imposed by law, including but not limited to, warranties of title or implied warranties of merchantability, satisfactory quality or fitness for a particular purpose. Without limiting the above, no warranty or guarantee is made (i) regarding the acceptance of any Request; (ii) that a User will receive the lowest available price for goods and/or services available through this Site; (iii) regarding the availability of products and/or services through this Site or, where applicable, at any participating retailer or retailer location; (iv) that use of this Site and all software, products or services associated with this platform will be error-free; (v) regarding the results that may be obtained from the use of this platform; (vi) regarding the completeness, accuracy, reliability or quality of any information, Content, data, service, advice or merchandise provided or available through this platform; or, (vii) regarding the performance or non-performance of this platform including, but not limited to, any performance or non-performance in connection with or as a consequence of the passage of time. You expressly agree that the use of this platform is at your sole risk.
+
+LIABILITY DISCLAIMER
+The Information, Software, Products and Services published on this platform may include inaccuracies or errors, including pricing errors. In particular, the myPillows Affiliates do not guarantee the accuracy of, and disclaim all liability for any errors or other inaccuracies relating to the information and description of the hotel and services displayed on this platform (including, without limitation, the pricing, photographs, list of hotel amenities, general product descriptions, etc.). In addition, myPillows expressly reserves the right to correct any pricing errors on our platform and/or pending reservations made under an incorrect price. In such event, if available, we will offer you the opportunity to keep your pending reservation at the correct price or we will cancel your reservation without penalty.
+
+Hotel ratings displayed on this platform are intended as only general guidelines, and the myPillows Affiliates do not guarantee the accuracy of the ratings. The myPillows Affiliates and their respective suppliers make no guarantees about the availability of specific products and services. The myPillows Affiliates and their respective suppliers may make improvements and/or changes on the platform at any time.
+
+The myPillows Affiliates and their respective suppliers make no representations about the suitability of the information, software, products and services contained on this platform for any purpose, and the inclusion or offering of any products or services on this platform does not constitute any endorsement or recommendation of such products or services by the myPillows Affiliates. All such information, software products, and services are provided “as is” without warranty of any kind. The myPillows Affiliates and their respective suppliers disclaim all warranties and conditions that this platform, its servers or any email sent from the myPillows Affiliates and/or their respective suppliers are free of viruses or other harmful components. The myPillows Affiliates and their respective suppliers hereby disclaim all warranties and conditions with regard to this information, software, products and services, including all implied warranties and conditions of merchantability, fitness for a particular response, title and non-infringement.
+
+The carriers, hotels and other suppliers providing travel or other services on this platform are independent contractors and not agents or employees of the myPillows Affiliates. The myPillows Affiliates are not liable for the acts, errors, omissions, representations, warranties, breaches or negligence of any such suppliers or for any personal injuries, death, property damage, or other damages or expenses resulting therefrom. The myPillows Affiliates have no liability and will make no refund in the event of any delay, cancellation, overbooking, strike, force majeure or other causes beyond their direct control, and they have no responsibility for any additional expenses, omissions, delays, re-routing or acts of any government or authority.
+
+In no event shall the myPillows Affiliates and/or their respective suppliers be liable for any direct, indirect, punitive, incidental, special or consequential damages arising out of, or in any way connected with, your access to, display of or use of this platform or with the delay or inability to access, display or use this platform (including, but not limited to, your reliance upon opinions appearing on this platform; any computer viruses, information, software, linked sites, products and services obtaining through this platform; or otherwise arising out of the access to, display of or use of this platform) whether based on a theory of negligence, contract, tort, strict liability, consumer protection statutes, or otherwise, and even if the myPillows Affiliates and/or their respective suppliers have been advised of the possibility of such damages.
+
+The limitation of liability reflects the allocation of risk between the parties. The limitations specified in this section will survive and apply even if any limited remedy specified in these Terms of Use is found to have failed of its essential purpose. The limitations of liability provided in these Terms of Use inure to the benefit of the myPillows Companies and the myPillows Affiliates and/or their respective Providers.
+
+Some states—to the extent their law might be deemed to apply, do not allow the limitation of liability, so the foregoing limitations might not apply to you.
+
+INDEMNIFICATION
+You agree to defend and indemnify the myPillows Affiliates, and/or their respective suppliers and any of their officers, directors, employees and agents from and against any claims, causes of action, demands, recoveries, losses, damages, fines, penalties or other costs or expenses of any kind or nature including but not limited to reasonable legal and accounting fees, brought by third parties as a result of:
+
+1. your breach of these Terms of Use or the documents referenced herein;
+2. violation of any law or the rights of a third party;
+3. your use of this platform; or
+4. your use of this platform for, or on behalf of, a Third Party.
+
+TERMINATION OF USAGE
+User access to all or part of this platform may be terminated or suspended at any time, without notice and for any reason.
+
+Software available on this PLATFORM
+Any software that we make available to download from this platform ("Software") or through your mobile application store, including the myPillows mobile application (the “Mobile Application”) is the copyrighted work of the myPillows Companies and/or our respective suppliers. Your use of such Software is governed by the terms of the end user license agreement, if any, which accompanies, or is included with, the Software ("License Agreement"). You may not install or use any Software that is accompanied by or includes a License Agreement unless you first agree to the License Agreement terms. For any Software made available for download on this platform not accompanied by a License Agreement, we hereby grant to you, the user, a limited, personal, non-exclusive, nontransferable license to download, install and use the Software and/or the Mobile Application for viewing and otherwise using this platform and/or accessing the content and information available within the Mobile Application (including, without limitation, price and availability of travel services) in accordance with these terms of use and for no other purpose.
+
+Please note that all Software, including, without limitation, all HTML code and Active X controls contained on this platform, is owned by the myPillows Affiliates, and/or our respective suppliers, and is protected by copyright laws and international treaty provisions. Any reproduction or redistribution of the Software is expressly prohibited, and may result in severe civil and criminal penalties. Violators will be prosecuted to the maximum extent possible.
+
+WITHOUT LIMITING THE FOREGOING, COPYING OR REPRODUCTION OF THE SOFTWARE TO ANY OTHER SERVER OR LOCATION FOR FURTHER REPRODUCTION OR REDISTRIBUTION IS EXPRESSLY PROHIBITED. THE SOFTWARE IS WARRANTED, IF AT ALL, ONLY ACCORDING TO THE TERMS OF THE LICENSE AGREEMENT.
+
+Your mobile device must be connected to the internet for the Mobile Application to function correctly. You are responsible for making all arrangements necessary for your device to have internet connectivity and are responsible for all sums your service provider may charge you arising out of the Mobile Application transmitting and receiving data (including but not limited to data roaming charges). As further described in our Privacy Policy, the Mobile Application will automatically transfer a small amount of data as part of its normal operation, including how you use the Mobile Application, which Content you access, and technical errors or problems which the Application may encounter while being used. By using the Mobile Application, you acknowledge, agree and consent to the automatic collection of this information.
+
+
+REVIEWS, COMMENTS, PHOTOS AND OTHER SUBMISSIONS
+We appreciate hearing from you. Please be aware that by submitting content to this platform by electronic mail, postings on this Site or otherwise, including any hotel reviews, photos,  videos, questions, comments, suggestions, ideas or the like contained in any submissions (collectively, "Submissions"), you grant myPillows and the affiliated, co-branded and/or linked platform partners through whom we provide service (collectively, "myPillows Affiliates"), a nonexclusive, royalty-free, perpetual, transferable, irrevocable and fully sub-licensable right to (a) use, reproduce, modify, adapt, translate, distribute, publish, create derivative works from and publicly display and perform such Submissions throughout the world in any media, now known or hereafter devised; and (b) use the name that you submit in connection with such Submission. You acknowledge that myPillows may choose to provide attribution of your comments or reviews (for example, listing your name and hometown on a hotel review that you submit) at our discretion, and that such submissions may be shared with our supplier partners. You further grant myPillows the right to pursue at law any person or entity that violates your or myPillows\'s rights in the Submissions by a breach of these Terms of Use. You acknowledge and agree that Submissions are non-confidential and non-proprietary.  You expressly waive any and all ‘moral rights’ (including rights of attribution or integrity) that may subsist in your Submissions and agree that you have no objection to the publication, use, modification, deletion or exploitation of your Submissions by us, the myPillows Affiliates or any of our partners or licensees. We take no responsibility and assume no liability for any Submissions posted or submitted by you. We have no obligation to post your comments; we reserve the right in our absolute discretion to determine which comments are published on the platform. If you do not agree to these terms of use, please do not provide us with any Submissions.
+Please note that we assume no responsibility for reviewing unsolicited ideas for our business (like product or advertising ideas), and will not incur any liability as a result of any similarities between those ideas and materials that may appear in future myPillows programs.
+
+You are fully responsible for the content of your Submissions (specifically including, but not limited to, reviews posted to this platform). You are prohibited from posting or transmitting to or from this platform: (i) any unlawful, threatening, libelous, defamatory, obscene, pornographic, or other material or content that would violate rights of publicity and/or privacy or that would violate any law; (ii) any commercial material or content (including, but not limited to, solicitation of funds, advertising, or marketing of any good or services); and (iii) any material or content that infringes, misappropriates or violates any copyright, trademark, patent right or other proprietary right of any third party. You shall be solely liable for any damages resulting from any violation of the foregoing restrictions, or any other harm resulting from your posting of content to this Site. You acknowledge that myPillows may exercise its rights (e.g. use, publish, delete) to any content you submit without notice to you. If you submit more than one review for the same hotel, only your most recent submission is eligible for use.
+
+From time to time we may offer customers incentives to leave hotel reviews (e.g. discount coupon/entry into prize draws etc.)  As it is important to us that hotel reviews are impartial and honest, these incentives will be available to customers regardless of whether the hotel review is positive or negative.
+
+All photos submitted are subject to our Photo Submission Guidelines stated below.  myPillows claims no ownership, affiliation with, or endorsement of any photos that are submitted by end users through our sites.
+
+myPillows\'s policies with respect to claims by third parties that the content of the platform, including the content of any Submissions, infringes the copyrights owned by said third party can be found above in the Copyright Complaint Policy section of these Terms of Use.
+
+Photo Submission Guidelines
+Any photos you submit must be:
+●	On topic – All photos must be relevant to accommodation, restaurant, location, or general travel experiences.
+●	Community/family friendly
+●	Do not submit any photos or materials that are illegal, obscene, pornographic, profane, vulgar, offensive or insulting.
+●	Do not submit photos or materials that invade the privacy or violate any personal right of any person or entity.
+●	Do not submit photos or information about children or any third parties without their consent (or their parent’s consent in the case of a child under 13 years of age).
+●	Children under 13 may not submit photos or other materials.
+●	Original – You may only submit your own photos.
+●	Do not submit photos from any other source (personal or commercial).
+●	Do not submit photos that infringe the copyright, trademark, or other property right of any third party.
+●	Non-commercial – Do not submit photos that include logos, branding, promotional material, or any other content intended for commercial purposes.
+●	No harmful files – Do not submit photos that contain viruses or other harmful code that is either intended or may result in damage to the computers and systems of myPillows and/or those using it.
+COPYRIGHT AND TRADEMARK NOTICES
+All contents of this platform are: © 2016 myPillows, Inc.  All rights reserved. myPillows is not responsible for content on platforms operated by parties other than myPillows app, mykingdom.company and myPillows.company, and the myPillows.com.
+
+If you are aware of an infringement of our brand, please let us know by emailing us at DL@mykingdom.company. We only address messages concerning brand infringement at this email address.
+
+Account Termination
+In accordance with the Digital Millennium Copyright Act ("DMCA") and other applicable law, myPillows has adopted a policy of terminating, in appropriate circumstances and at myPillows Inc.’s sole discretion, subscribers or account holders who are deemed to be repeat infringers. myPillows may also at its sole discretion limit access to the platform and/or terminate the accounts of any users who infringe any intellectual property rights of others, whether or not there is any repeat infringement. If you believe that an account holder or subscriber is a repeat infringer, please provide information sufficient for us to verify that the account holder or subscriber is a repeat infringer when filing your notice.
+
+NOTICE OF INFRINGING MATERIAL
+If you believe in good faith that materials hosted by us infringe your copyright, you (or your agent) may send us a written notice that includes the following information.  Please note that we will not process your complaint if it is not properly filled out or is incomplete. Any misrepresentations in your notice regarding whether content or activity is infringing may expose you to liability for damages.
+
+1. A clear identification of the copyrighted work you claim was infringed.
+2. A clear identification of the material you claim is infringing on the platform, such as a link to the infringing material.
+3. Your address, email address and telephone number.
+4. A statement that you have a “good faith belief that the material claimed as copyright infringement is not authorized by the copyright owner, its agent or the law.
+5. A statement that “the information on the notification is accurate, and under penalty of perjury, the complaining party is authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.
+6. A signature by the person authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.
+
+You may send us your notice by email to DL@mykingdom.company.
+
+COUNTERNOTICES
+If material you have posted has been taken down, you may file a counter-notification by fax or regular mail that sets forth the items specified below.  You may want to seek legal counsel prior to doing so.  Please include the following details:
+
+1. Identification of the specific content that was removed or disabled and the location that content appeared on myPillows’s platform. Please provide the URL address if possible.
+2. Your name, mailing address, telephone number and email address.
+3. A statement that you consent to the jurisdiction of Federal District Court for the judicial district in which your address is located, or if your address is outside of the United States, for any judicial district in which myPillows, Inc. may be found, and that you will accept service of process from the party who reported your content, or that party’s agent.
+4. The following statement: "I swear, under penalty of perjury, that I have a good faith belief that the content identified above was removed or disabled as a result of a mistake or misidentification.”
+
+Sign the paper.  Send the written communication to the following address:
+
+myPillows, Inc.
+Attn: IP/Trademark Legal Dept., DMCA Complaints
+333 108th Avenue NE
+Bellevue WA 98004
+
+PATENT NOTICES
+One or more patents owned by the myPillows Companies may apply to this platform and to the features and services accessible via the platform. Portions of this platform operate under license of one or more patents. Other patents pending.
+
+GENERAL
+Your use of mapping available on this platform is governed by the Microsoft Terms of Use and Microsoft Privacy Statement and the Google Terms of Use and Google Privacy Statement. Microsoft and Google reserve the right to change their Terms of Use and Privacy Statements at any time, at their sole discretion. Please click here for additional information:
+
+http://privacy.microsoft.com/en-us/default.mspx
+http://www.microsoft.com/maps/assets/docs/terms.aspx
+http://www.google.com/privacy/privacy-policy.html
+http://www.google.com/enterprise/earthmaps/legal/us/maps_AUP.html
+http://www.maps.google.com/help/legalnotices_maps.html
+http://maps.google.com/help/terms_maps.html
+
+These Terms of Use are governed by the Federal Arbitration Act, federal arbitration law, and for reservations made by U.S. residents, the laws of the state in which your billing address is located, without regard to principles of conflicts of laws.  Use of this platform is unauthorized in any jurisdiction that does not give effect to all provisions of this Agreement, including, without limitation, this paragraph.
+
+You agree that no joint venture, partnership, or employment relationship exists between you and the myPillows Companies as a result of this Agreement or use of this platform.
+
+Our performance of this Agreement is subject to existing laws and legal process, and nothing contained in this Agreement limits our right to comply with law enforcement or other governmental or legal requests or requirements relating to your use of this platform or information provided to or gathered by us with respect to such use.
+
+If any part of this Agreement is found to be invalid, illegal or unenforceable, the validity, legality and enforceability of the remaining provisions will not in any way be affected or impaired. Our failure or delay in enforcing any provision of this Agreement at any time does not waive our right to enforce the same or any other provision(s) hereof in the future.
+
+Fictitious names of companies, products, people, characters, and/or data mentioned on this platform are not intended to represent any real individual, company, product, or event.
+
+Any rights not expressly granted herein are reserved.
+
+MISCELLANEOUS
+The captions in these Terms of Use are only for convenience and do not, in any way, limit or otherwise define the terms and provisions of these Terms of Use.
+
+None of the myPillows Companies or the myPillows Affiliates is responsible for any errors or delays in responding to a Request caused by an incorrect email address provided by you or other technical problems beyond their control.
+
+ENTIRE AGREEMENT
+This Agreement, together with the Travel Product Rules and Regulations, Privacy Policy, and any other terms and conditions referenced herein, constitutes the entire agreement between you and myPillows with respect to this platform, our services and your dealings and relationships with us, and it supersedes all prior or contemporaneous communications and proposals, whether electronic, oral, or written, between you and us. A printed version of this Agreement and of any notice given in electronic form shall be admissible in judicial, arbitration or any other administrative proceedings to the same extent and subject to the same conditions as other business documents and records originally generated and maintained in printed form.
+
+REGISTRATIONS
+myPillows, Inc., a Singapore private limited company, is located at my kingdom pte ltd 30 Cecil Street Singapore 049712. More information about mykingdom.company may be found at our Company Overview page.
+
+
+
+
+SERVICE HELP
+For quick answers to your questions or ways to contact us, you can write to us at:
+
+Attn: Customer Service
+myPillows
+DL@mykingdom.company
+
+©2016 myPillows, Inc. All rights reserved.
+    </string>
+    <string name="policy">What information we collect from you
+
+In General
+We receive and store any information you enter on our platform or give us in any other way. This includes information that can identify you ("personal information"), including your first and last name, telephone number, postal and email addresses, and billing information (such as credit card number, cardholder name, and expiration date). We may also request information about your hotel room preferences, and frequent flyer and car rental program information. You can choose not to provide information to us, but in general some information about you is required in order for you to register as a member; book travel; complete a traveler profile; participate in a survey, contest, or sweepstakes; ask us a question; or initiate other transactions on our site.
+Travel Companion Information
+When you make a reservation for someone else through this platform, we will request personal information and travel preferences about that individual. You should obtain the consent of other individuals prior to providing us with their personal information and travel preferences, as any access to view or change their information will be available only through your account.
+Information from Other Sources
+We also may periodically obtain both personal and non-personal information about you from affiliated entities, business partners and other independent third-party sources and add it to our account information. Examples of information we may receive include: updated delivery and address information, purchase history, and demographic information.
+Automatic Information
+We automatically collect some information about your computer when you visit this platform. For example, we will collect your IP address, Web browser software (such as Firefox, Safari, or Internet Explorer), and referring platform. We also may collect information about your online activity, such as trips viewed and bookings made. Our goals in collecting this automatic information include helping customize your user experience and inhibiting fraud. For more information, please see the "Cookies and other technologies" section below.
+How we use your information
+We use sensitive billing information (such as cardholder name, credit card number, and expiration date) for the purpose of completing the travel bookings you conduct on our site. We use other information about you for the following general purposes: to provide you with the products and services you request; to provide you with travel confirmation and updates; to manage your account, including processing bills and providing travel notifications; to communicate with you in general; to respond to your questions and comments; to measure interest in and improve our products, services, platform, and our Apps; to notify you about special offers and products or services that may be of interest to you; to otherwise customize your experience with this platform and our Apps; to reward you as part of any reward and recognition program you choose to join; to solicit information from you, including through surveys; to resolve disputes, collect fees, or troubleshoot problems; to prevent potentially prohibited or illegal activities; to enforce our Terms of Use; and as otherwise described to you at the point of collection.
+We often receive testimonials and comments from customers who have had positive booking and/or travel experiences on our platform. We occasionally publish such content, using first name plus last initial, only, for attribution.
+E-mail Communications
+We want to make it easy for you to take advantage of travel-related opportunities on our platform and through our Apps. One way we do this is by sending you email messages that contain information about your apparent travel-related interests. Similarly, if you receive an email from us about New York travel and demonstrate an interest in New York hotels by affirmatively clicking on a link about New York hotels in the email, you may receive an email about New York hotel offers. We believe these email messages will provide you with useful information about travel-related special offers available through our site and our Apps. Please note that you will have the opportunity to choose not to receive these email messages in any such email we send.
+Please review the section titled "Your choices with respect to the collection and use of your information" below.
+With whom we share your information
+This platform may share your information with the following entities:
+Suppliers such as hotel, airline, car rental, and activity providers, who fulfill your travel reservations. Throughout this site, all services provided by a third-party supplier are described as such. We do not place limitations on our suppliers\' use or disclosure of your personal information. Therefore, we encourage you to review the privacy policies of any travel supplier whose products you purchase through this site. Please note that these suppliers also may contact you as necessary to obtain additional information about you, facilitate your travel reservation, or respond to a review you may submit.
+Third-party vendors who provide services or functions on our behalf, including credit card processing, business analytics, customer service, marketing, distribution of surveys or sweepstakes programs, and fraud prevention. We may also authorize third-party vendors to collect information on our behalf, including as necessary to operate features of our platform or our Apps or to facilitate the delivery of online advertising tailored to your interests. Third-party vendors have access to and may collect information only as needed to perform their functions and are not permitted to share or use the information for any other purpose.
+Business partners with whom we may jointly offer products or services, or whose products or services may be offered on our platform or through our Apps. You can tell when a third party is involved in a product or service you have requested because their name will appear, either alone or with ours. If you choose to access these optional services, we may share information about you, including your personal information, with those partners. Please note that we do not control the privacy practices of these third-party business partners.
+Referring platforms. If you were referred to this platform from another site (for example, through a link you clicked on another site that directed you to this one), we may share some information about you with that referring platform. We have not placed limitations on the referring platforms\' use of your personal information and we encourage you to review the privacy policies of any platform that referred you here.
+Companies within our corporate family. We may share your personal information with our parent company and corporate affiliates, such as Expedia.com, CarRentals.com and Hotels.com, as well as international corporate affiliates such as Expedia.co.uk. This sharing enables us to provide you with information about products and services, both travel-related and other, which might interest you. To the extent that our parent company and corporate affiliates have access to your information, they will follow practices that are at least as restrictive as the practices described in this Privacy Policy. They also will comply with applicable laws governing the transmission of promotional communications and, at a minimum, give you an opportunity in any commercial email they send to choose not to receive such email messages in the future.
+We also may share your information:
+●	In response to subpoenas, court orders, or other legal process; to establish or exercise our legal rights; to defend against legal claims; or as otherwise required by law. In such cases we reserve the right to raise or waive any legal objection or right available to us.
+●	When we believe it is appropriate to investigate, prevent, or take action regarding illegal or suspected illegal activities; to protect and defend the rights, property, or safety of our company or this platform or our Apps, our customers, or others; and in connection with our Terms of Service and other agreements.
+●	In connection with a corporate transaction, such as a divestiture, merger, consolidation, or asset sale, or in the unlikely event of bankruptcy.
+Other than as set out above, you will be notified when personal information about you will be shared with third parties, and you will have an opportunity to choose not to have us share such information.
+We also may share aggregate or anonymous information with third parties, including advertisers and investors. For example, we may tell our advertisers the number of visitors our platform receives or the most popular hotels and vacation destinations. This information does not contain any personal information and is used to develop content and services we hope you will find of interest.
+How you can access your information
+myPillows registered users can access and update their contact information by visiting the myPillows My Account page. myPillows email subscribers can access and update their subscription choices through Subscription Management links found in the footer of any myPillows email. You can close your account by contacting us at the email address listed below. Please note that after you close an account, you will not be able to sign in or access any of your personal information. However, you can open a new account at any time. Please also note that we may retain certain information associated with your account, including for analytical purposes as well as for recordkeeping integrity.
+Your choices with respect to collection and use of your information
+●	As discussed above, you can choose not to provide us with any information, although it may be needed to make travel bookings or to take advantage of certain features offered on our site or our Apps.
+●	You also can add or update information and close your account as described above.
+●	As a myPillows registered user, you can modify your subscription choices at any time on the myPillows My Account page. Whether registered as a member or not, you also will be given the opportunity to unsubscribe from commercial messages in any such email we send. Please note that we reserve the right to send you other communications, including service announcements, administrative messages, and surveys relating either to your account or to your transactions on this site, without offering you the opportunity to opt out of receiving them.
+●	The Help portion of the toolbar on most browsers will tell you how to prevent your browser from accepting new cookies, how to have the browser notify you when you receive a new cookie, or how to disable cookies altogether. Please note that if you refuse to accept cookies from our site, you will not be able to access portions of this site.
+Cookies and other technologies
+Cookies are small data text files and can be stored on your computer\'s hard drive (if your Web browser permits). This platform use cookies for the following general purposes:
+●	To help us recognize your browser as a previous visitor and save and remember any preferences that may have been set while your browser was visiting this site. For example, if you register on this site, we may use cookies to remember your registration information. Please note that member IDs, passwords, and any other account-related data included in such cookies are encrypted for security purposes. Unless you register with us, these cookies will not contain any personal information.
+●	To help us customize the content and advertisements provided to you on this platform and on other sites across the Internet. For example, when you access a page on our platform, a cookie is automatically set by us, our service providers, or our partners to recognize your browser as you navigate on the Internet and to present you with information and advertising based on your apparent interests. See the "Display of advertising/Your choices" section for more information about our online advertising practices and your choices.
+●	To help measure and research the effectiveness of platform features and offerings, advertisements, and email communications (by determining which emails you open and act upon).
+The Help portion of the toolbar on most browsers will tell you how to prevent your browser from accepting new cookies, how to have the browser notify you when you receive a new cookie, or how to disable cookies altogether. Please note that if you refuse to accept cookies, you may not be able to access many of the travel tools offered on our site.
+In addition to the above cookies, we use Local Shared Objects, also referred to as "flash cookies," on our platform. These are used to enhance your user experience, for example, by storing your user preferences and settings, such as your volume/mute settings, and in connection with animated content on our platform. Local Shared Objects are similar to browser cookies, but can store data more complex than simple text. By themselves, they cannot do anything to or with the data on your computer. Like other cookies, they can only access personally identifiable information that you have provided on this site, and cannot be accessed by other platforms.
+This site may also use Web beacons (also known as clear gifs, pixel tags or Web bugs), which are tiny graphics with a unique identifier, similar in function to cookies, that are placed in the code of a Web page. We use Web beacons to monitor the traffic patterns of users from one page within our site to another, to deliver or communicate with cookies, to understand whether you have come to this site from an online advertisement displayed on a third-party platform, and to improve site performance. We also may allow our service providers to use Web beacons to help us understand which emails have been opened by recipients and to track the visitor traffic and actions on this site. This helps us measure the effectiveness of our content and other offerings.
+Display of tailored advertising/Your choices
+Data collected by this platform to serve you with relevant advertising
+myPillows is committed to providing you with relevant content and information. To do this, we may collect, through cookies and other technologies information about your travel-related searches, such as whether you are looking for hotels, and use this information to serve you with ads, on our platform or elsewhere online, that match your apparent interests. Please note that we do not combine the information we collect about your travel-related searches on this platform with personal information (such as email address) to serve you with ads across other platforms. We also do not share your personal information with third parties so they can serve you with advertisements. Note that if you choose not to receive tailored ads, you will see online advertisements, but they will be more general and less relevant to you.
+Data collected by business partners and ad networks to serve you with relevant advertising.
+The advertisements you see on this platform are served by us or by our service providers. But we also allow third parties to collect information about your online activities through cookies and other technologies. These third parties include (1) business partners, who collect information when you view or interact with one of their advertisements on our site, and (2) advertising networks, who collect information about your interests when you view or interact with one of the advertisements they place on many different platforms on the Internet. The information gathered by these third parties is used to make predictions about your characteristics, interests or preferences and to display advertisements on our site and across the Internet tailored to your apparent interests. We do not permit these third parties to collect personal information about you on our site, nor do we share with them any personal information about you.
+Please note that we do not have access to or control over cookies and other technologies. These third parties may use to collect information about your interests, and the information practices of these third parties are not covered by this Privacy Policy. These companies may offer you a way to opt out of ad targeting based on their cookies. You may find more information by clicking on the company names above and following the links to the platforms of each company. Some of these companies are members of the Network Advertising Initiative, which offers a single location to opt out of ad targeting from member companies. Data collected by companies that operate cookie-based exchanges to serve you with relevant advertising.
+Like other companies operating online, Expedia.com participates in cookie-based exchanges where anonymous information is collected about your browsing behavior through cookies and other technologies and segmented into different topics of interest (such as travel). These topics of interest are then shared with third parties, including advertisers and ad networks, so they can tailor advertisements to your apparent interests. We do not share personal information (such as your email address) with these companies and we do not permit these companies to collect any such information about you on our site. Please click here to learn more about cookie-based exchanges, including how to access information about the topics of interest associated with cookies on your computer and how to decline participation in these programs.
+Do-Not-Track Signals and Similar Mechanisms
+Some web browsers may transmit “do-not-track” signals to platforms with which the browser communicates. Because of differences in how web browsers incorporate and activate this feature, it is not always clear whether users intend for these signals to be transmitted, or whether they even are aware of them. Participants in the leading Internet standards-setting organization that is addressing this issue are in the process of determining what, if anything, platforms should do when they receive such signals. myPillows currently does not take action in response to these signals. If and when a final standard is established and accepted, we will reassess how to respond to these signals.
+Using the myPillows.com mobile phone and tablet Apps (the “Mobile Apps”)
+When you use a myPillows.com Mobile App, we collect and use information about you in the same way and for the same purposes as we do when you use our platform.
+In addition to this, we also use some other information that we collect automatically when you use our Mobile Apps. Specifically:
+●	We collect information about Mobile App functionality that you access and use. This allows us to identify those areas of the Mobile App that are of interest to our customers so that we can refine and continuously improve the Mobile App. The information we collect for this purpose does not enable us to directly identify you.
+●	Each Mobile App also creates a sequence of numbers or characters that are unique to your mobile device (a “Mobile Identifier”), which is used for identification purposes, including identifying your preferences. We use communicate with our advertising networks regarding the number of downloads resulting from clicks on their respective ad banners and other marketing tools using industry standard mobile identifiers.
+●	If you use a Mobile App\'s ’find hotels’ feature using your ‘current location,’ we use information about your current location – provided by your mobile device using GPS or similar technologies – to show nearby facilities. We do not collect location data unless you expressly click on the ’find hotels’ feature using ‘current location’ as your destination or you switch on location data collection through your phone settings menu.
+●	Each Mobile App will also send us error-reporting information in the event that it crashes or hangs. This enables us to investigate the error and to improve the stability of the Mobile App for future releases. As part of these error reports, the Mobile App sends us information about the mobile device type and version, the Mobile Identifier, the time the error occurred, the feature being used and the state of the application when the error occurred. We do not use this information for any purpose other than investigating and remedying the error.
+You always have the ability to control certain information a Mobile App sends to us. You can switch off location data collection at any time through your phone settings menu. Alternatively, you can remove the Mobile App from your mobile device entirely and access our services through our platform.
+How we protect your information
+We want you to feel confident about using this platform and our Apps to make hotel and travel arrangements, and we are committed to protecting the information we collect. While no platform can guarantee security, we have implemented appropriate administrative, technical, and physical security procedures to help protect the personal information you provide to us. For example, only authorized employees are permitted to access personal information, and they only may do so for permitted business functions. In addition, we use encryption when transmitting your sensitive personal information between your system and ours, and we employ firewalls and intrusion detection systems to help prevent unauthorized persons from gaining access to your information.
+Children\'s privacy
+This is a general audience platform and does not offer services directed to children. Should a child whom we know to be under 13 send personal information to us, we will use that information only to respond directly to that child to inform him or her that we must have parental consent before receiving his or her personal information.
+
+
+External links
+If any part of this platform links you to other sites, those sites do not operate under this Privacy Policy. We recommend you examine the privacy statements posted on those other platforms to understand their procedures for collecting, using, and disclosing personal information.
+Visiting our platform from outside the United States
+If you are visiting our platform or using our Apps from outside the United States, please be aware that your information may be transferred to, stored, and processed in the United States where our servers are located and our central database is operated. The data protection and other laws of the United States and other countries might not be as comprehensive as those in your country, but please be assured that we take steps to ensure that your privacy is protected. By using our services, you understand that your information may be transferred to our facilities and those third parties with whom we share it as described in this Policy.
+Agreement to myPillows’s Terms of Use
+Your use of the myPillows.com platform is also subject to myPillows Terms of Use. Any disputes related to this Privacy Policy shall be governed by the dispute resolution provisions of the Terms of Use (including, but not limited to, its provisions concerned dispute arbitration) which are incorporated here by reference.
+Changes to this Privacy Policy
+We may update this Privacy Policy in the future. We will notify you about material changes to this Privacy Policy by sending a notice to the email address you provided to us or by placing a prominent notice on our platform and/or through our Apps.
+
+How you can contact us
+If you have questions about this Privacy Policy (or your travel planning or purchases), please contact us at:
+Email
+Our customer care associates are available 24 hours a day, seven days a week. If you have any questions, please email at DL@mykingdom.company.
+</string>-->
+    <string name="enter_city">Enter City</string>
+    <string name="title_activity_botel_details">BotelDetailsActivity</string>
+    <string name="top_three_ofers">Bargained Offers</string>
+    <string name="bargained_offer">Bargained Offer: </string>
+    <string name="offer_price">"Offer Price: "</string>
+    <string name="error_generic">Sorry…There is something fishy happening now. Please try again.</string>
+    <string name="contact_hotel_directly_text">Good news. Your booking has been confirmed. You can contact the hotel directly for any questions.</string>
+
+    <string name="title_activity_login_signup">LoginSignupActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="mobile">Enter your mobile number</string>
+    <string name="error_no_mobile">Please enter a valid mobile number</string>
+    <string name="login">Login</string>
+    <string name="error_internet">No internet</string>
+    <string name="error_general">ERROR OCCURRED</string>
+    <string name="confirmationHeadingText">Confirmation</string>
+    <string name="adultText">Adults : </string>
+    <string name="rooms_heading">Rooms : </string>
+    <string name="selected_rooms_heading">Selected Room : </string>
+    <string name="room_type">Room Type : </string>
+    <string name="hotel_class">Hotel Class : </string>
+    <string name="nights_heading">Nights : </string>
+    <string name="budget_heading">Budget per night : </string>
+    <string name="total_budget_heading">Total Budget : </string>
+    <string name="proceed_button_text">Proceed</string>
+    <string name="cancel">Cancel</string>
+    <string name="otp_resend_message_text">Resend otp in %1$d:%2$d minutes</string>
+    <string name="success_booking">Your request has been posted successfully. You will be notified with the lowest offers made by the hoteliers shortly (via SMS).\"</string>
+    <string name="utel_app">cheQin</string>
+    <string name="rupee_amount">₹  %s</string>
+    <string name="total_budget">Total Budget</string>
+    <string name="for_x_nights">for %d Nights</string>
+    <string name="for_1_night">for 1 Night</string>
+    <string name="for_x_rooms">%d Rooms</string>
+    <string name="for_1_room">1 Room</string>
+
+    <string name="any_special_requests">Write any special requests here</string>
+    <string name="budget_per_night">Budget per Night</string>
+    <string name="you_are_logged_out">You have been logged out.Please login again to continue.</string>
+    <string name="clear">Clear</string>
+    <string name="save">Save</string>
+</resources>

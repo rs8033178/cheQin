@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/log_in"
+        android:icon="@drawable/ic_exit_to_app_black_24dp"
+        android:title="Login" />
+    <item
+        android:id="@+id/requested_offer"
+        android:icon="@drawable/ic_send_black_24dp"
+        android:title="Live Requests" />
+    <item
+        android:id="@+id/request_to_offer"
+        android:icon="@drawable/ic_bargain"
+        android:iconTint="@color/utel_color"
+        android:title="Bargain Now" />
+    <item
+        android:id="@+id/my_offers"
+        android:icon="@drawable/ic_offers"
+        android:iconTint="@color/utel_color"
+        android:title="Bargained Offers" />
+    <item
+        android:id="@+id/my_posted_offers"
+        android:icon="@drawable/ic_offers"
+        android:iconTint="@color/utel_color"
+        android:title="My Posted Offers" />
+    <item
+        android:id="@+id/confirm_booking"
+        android:icon="@drawable/ic_confirmation"
+        android:iconTint="@color/utel_color"
+        android:title="Booking Confirmations" />
+    <item
+        android:id="@+id/cancel_request"
+        android:icon="@drawable/ic_cancellation"
+        android:iconTint="@color/utel_color"
+        android:title="Cancellations" />
+    <item
+        android:id="@+id/hotel_profile"
+        android:icon="@drawable/ic_business_black_24dp"
+        android:iconTint="@color/utel_color"
+        android:title="Hotel Profile" />
+    <item
+        android:id="@+id/hotel_gallery"
+        android:icon="@drawable/ic_photo_library_black_24dp"
+        android:iconTint="@color/utel_color"
+        android:title="Hotel Gallery" />
+    <item
+        android:id="@+id/messages"
+        android:icon="@drawable/messages_24dp"
+        android:iconTint="@color/utel_color"
+        android:title="Messages" />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_profile_nav"
+        android:iconTint="@color/utel_color"
+        android:title="Profile" />
+    <item
+        android:id="@+id/send_feedback"
+        android:icon="@drawable/ic_feedback"
+        android:iconTint="@color/utel_color"
+        android:title="Send Feedback" />
+    <item
+        android:id="@+id/rate_us"
+        android:icon="@drawable/ic_star_black_24dp"
+        android:iconTint="@color/utel_color"
+        android:title="Rate Us" />
+    <item
+        android:id="@+id/contact_us"
+        android:icon="@drawable/ic_contact_us"
+        android:iconTint="@color/utel_color"
+        android:title="Contact Us" />
+    <item
+        android:id="@+id/log_out"
+        android:icon="@drawable/ic_logout"
+        android:iconTint="@color/utel_color"
+        android:title="Logout" />
+
+    <item
+        android:orderInCategory="500"
+        android:title="" />
+</menu>

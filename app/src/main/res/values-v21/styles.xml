@@ -1,0 +1,25 @@
+<resources>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:textColor">#ebebeb</item>
+        <item name="android:fontFamily"></item>
+    </style>
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        //hint color And Label Color in False State
+        <item name="android:textColorHint">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+        //Label color in True State And Bar Color False And True State
+        <item name="colorAccent">#FFFFFF</item>
+        <item name="colorControlNormal">#000000</item>
+        <item name="colorControlActivated">#000000</item>
+    </style>
+</resources>

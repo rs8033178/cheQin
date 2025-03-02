@@ -1,0 +1,22 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="map_corner_rad">8dp</dimen>
+    <dimen name="map_card_elevation">8dp</dimen>
+    <dimen name="map_card_content_padding">15dp</dimen>
+    <dimen name="padding">12dp</dimen>
+    <dimen name="padding_very_small">3dp</dimen>
+    <dimen name="padding_small">6dp</dimen>
+    <dimen name="text_size_twelve">12sp</dimen>
+    <dimen name="mob_text_size">17sp</dimen>
+    <dimen name="hotel_card_height">240dp</dimen>
+
+    <dimen name="padding_medium">10dp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_medium_plus">18sp</dimen>
+    <dimen name="otp_dialog_radius">8dp</dimen>
+    <dimen name="otp_button_spinner_height">30dp</dimen>
+</resources>

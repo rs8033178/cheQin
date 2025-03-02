@@ -1,0 +1,114 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar.Bridge">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+
+        <item name="materialCalendarFullscreenTheme">@style/MaterialCalendarTheme</item>
+    </style>
+
+
+    <style name="MaterialCalendarTheme" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="materialCalendarStyle">@style/MaterialCalendarStyle</item>
+        <item name="materialCalendarHeaderLayout">@style/MaterialCalendarHeader</item>
+
+        <item name="android:colorPrimary">@color/utel_color</item>
+        <!-- Action Styles -->
+        <item name="buttonBarPositiveButtonStyle">@style/MaterialCalendarActionStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/MaterialCalendarActionStyle</item>
+    </style>
+
+    <style name="MaterialCalendarHeader" parent="Widget.MaterialComponents.MaterialCalendar.HeaderLayout">
+        <item name="android:background">@color/utel_color</item>
+    </style>
+
+    <style name="MaterialCalendarHeaderToggle" parent="Widget.MaterialComponents.MaterialCalendar.HeaderToggleButton">
+        <item name="android:tint">@color/utel_color</item>
+    </style>
+
+    <style name="MaterialCalendarStyle" parent="Widget.MaterialComponents.MaterialCalendar">
+        <item name="daySelectedStyle">@style/DaySelectedStyle</item>
+        <item name="rangeFillColor">@color/colorAccentLight</item>
+    </style>
+
+    <style name="DaySelectedStyle" parent="Widget.MaterialComponents.MaterialCalendar.Day.Selected">
+        <item name="itemFillColor">?attr/colorPrimaryDark</item>
+        <item name="itemTextColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="MaterialCalendarActionStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/utel_color</item>
+    </style>
+
+    <style name="materialDayTextAppearance">
+        <item name="android:textColor">@color/utel_color</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:textColor">#ebebeb</item>
+        <item name="android:titleTextColor">#ebebeb</item>
+    </style>
+
+    <style name="Fullscreen" parent="AppTheme.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="Theme.MaterialComponents.Light.DarkActionBar.Bridge" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+    <style name="CustomToolbarTheme" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="android:textColorSecondary">@color/colorPrimary</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="FacebookLoginButton">
+        <!--<item name="android:textSize">@dimen/smallTxtSize</item>-->
+        <item name="android:background">@drawable/facebook_signin_btn</item>
+        <item name="android:text">facebook</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.MaterialComponents.NoActionBar.Bridge">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.MaterialComponents.Bridge">
+        <item name="colorControlNormal">@color/blue</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.MaterialComponents.ActionBar.Primary">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="Example4ToolbarTheme" parent="ThemeOverlay.MaterialComponents.Light">
+        <item name="colorControlNormal">@color/calendar_grey</item>
+    </style>
+
+</resources>

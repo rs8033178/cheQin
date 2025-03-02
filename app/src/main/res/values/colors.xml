@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FF5A5F</color>
+    <!--<color name="colorPrimaryDark">#26A69A</color>-->
+    <color name="colorAccent">#ff5a5f</color>
+    <color name="colorAccentDark">#c62035</color>
+    <color name="colorAccentLight">#ff8e8c</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#ebebeb</color>
+    <color name="black">#000000</color>
+    <color name="material_blue_grey_80">#ff33b5e5</color>
+    <color name="red_btn_bg_color">#ff5a5f</color>
+    <color name="red">#ff5a5f</color>
+    <color name="material_blue_grey_95">#ff33b5e5</color>
+    <color name="gray_btn_bg_color">#ff5a5f</color>
+    <color name="swamiji_color">#ffa500</color>
+    <color name="circle_background">#fff2f2f2</color>
+    <color name="line_background">#ffcccccc</color>
+    <color name="done_text_color_normal">#ff333333</color>
+    <color name="done_text_color_disabled">#ffcccccc</color>
+    <color name="blue">#ff33b5e5</color>
+    <color name="darker_blue">#ff0099cc</color>
+    <color name="date_picker_text_normal">#ff999999</color>
+    <color name="calendar_header">#ff999999</color>
+    <color name="date_picker_view_animator">#fff2f2f2</color>
+
+    <color name="ampm_text_color">#8C8C8C</color>
+    <color name="numbers_text_color">#8c8c8c</color>
+
+    <color name="transparent_black">#41000000</color>
+
+    <color name="utel_color">#ff5a5f</color>
+    <color name="bg_transparent">#9E090808</color>
+    <color name="text_grey_dark">#727477</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="gray_shade_7">#616161</color>
+    <color name="gray_shade_10">#9E9E9E</color>
+    <color name="error_color">#C51162</color>
+    <color name="cancel_bg">#BBBBBB</color>
+    <color name="google_review_color">#2376E5</color>
+
+    <color name="calendar_grey">#474747</color>
+    <color name="calendar_green">#008489</color>
+    <color name="calendar_grey_past">#BEBEBE</color>
+
+    <color name="example_1_bg">#3A284C</color>
+    <color name="example_1_bg_light">#433254</color>
+    <color name="example_1_white_light">#BEBEBE</color>
+    <color name="example_1_white">@color/black</color>
+
+</resources><!--556aa8-->
+    <!--ee2b39-->
