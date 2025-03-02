@@ -22,12 +22,10 @@ Get real-time access to the top three lowest offers from hoteliers (or related s
   <tr>
     <td><img src="screenshots/c1.png" width="300"/></td>
     <td><img src="screenshots/c2.png" width="300"/></td>
-  </tr>
-   <tr>
     <td><img src="screenshots/c3.png" width="300"/></td>
-    <td><img src="screenshots/c4.png" width="300"/></td>
   </tr>
    <tr>
+    <td><img src="screenshots/c4.png" width="300"/></td>
     <td><img src="screenshots/c5.png" width="300"/></td>
     <td><img src="screenshots/c6.png" width="300"/></td>
   </tr>
