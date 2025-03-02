@@ -2,7 +2,7 @@
 ## About this App
 
 The guest can post a request that includes the check-in/out time, hotel class, preferred area, and budget. CheQIn.club creates competition among hoteliers (or related stays) and brings in the top three lowest real-time offers.
-<img src="screenshots/c10.png" width="300"/>
+<img src="app/src/main/res/drawable-xhdpi/utellogo.png" width="300"/>
 ### **App Links**
 - **Android:** [CheQIn on Play Store](https://play.google.com/store/apps/details?id=com.cheqinapp.bookingX)  
 - **iOS:** [CheQIn on App Store](https://apps.apple.com/us/app/cheqin-bargain-for-hotel-stay/id6443889147)  
