@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:id="@+id/group_booking_card"
+    app:cardBackgroundColor="@color/white"
+    tools:showIn="@layout/layout_user_booking"
+    tools:visibility="visible">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.cheqin.booking.utils.CustomFontCheckedTextview
+            android:id="@+id/cb_group_booking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkMarkTint="@color/grey"
+            android:checked="false"
+            android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:text="Group Booking"
+            android:textSize="16sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/ll_grp_booking_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cb_group_booking"
+            android:layout_marginTop="4dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <com.cheqin.booking.utils.CustomFontTextview
+                android:id="@+id/tv_grp_budget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/budget_per_night"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+            <com.cheqin.booking.utils.CustomFontTextview
+                android:id="@+id/rupee_symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/edt_grp_price"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="4dp"
+                android:layout_toLeftOf="@id/edt_grp_price"
+                android:text="₹"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edt_grp_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="16dp"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:minWidth="80dp"
+                android:textColor="@color/black"
+                tools:text="1000021221212233434" />
+
+            <TextView
+                android:id="@+id/tv_grp_total_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_grp_price"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/total_budget"
+                android:textColor="@color/text_grey_dark"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <com.cheqin.booking.utils.CustomFontTextview
+                android:id="@+id/tv_grp_budget_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_grp_total_label"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/for_1_night"
+                android:textColor="@color/text_grey_dark"
+                android:textSize="16sp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_grp_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edt_grp_price"
+                android:layout_alignStart="@id/rupee_symbol"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@id/tv_grp_total_label"
+                android:gravity="start"
+                android:textColor="@color/text_grey_dark"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="₹ 23456" />
+
+            <EditText
+                android:id="@+id/edt_grp_special_req"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_grp_budget_desc"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#f2f2f2"
+                android:hint="@string/any_special_requests"
+                android:maxLines="10"
+                android:minLines="2"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ebebeb"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reg_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="Sign Up as a Hotelier"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+
+            <EditText
+                android:id="@+id/f_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/group_top"
+                android:ellipsize="start"
+                android:gravity="center_horizontal"
+                android:hint="First Name"
+                android:inputType="textCapWords|textPersonName"
+                android:maxLength="25"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:singleLine="true"
+                android:textColorHighlight="@color/white"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/l_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/group_row"
+                android:ellipsize="start"
+                android:gravity="center_horizontal"
+                android:hint="Last Name"
+                android:inputType="textCapWords"
+                android:maxLength="25"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColorHighlight="@color/white"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/group_row"
+                android:ellipsize="start"
+                android:gravity="center_horizontal"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:maxLength="30"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/group_row"
+                android:ellipsize="start"
+                android:gravity="center_horizontal"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:maxLength="15"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="15dp" />
+
+            <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_marginBottom="5dp">-->
+            <!--<EditText android:id="@+id/input_confirm"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:inputType="textPassword"-->
+
+            <!--android:hint="Confirm"-->
+            <!--android:textColorHint="@color/white"/>-->
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <EditText
+                android:id="@+id/input_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/group_row"
+                android:ellipsize="start"
+                android:gravity="center_horizontal"
+                android:hint="Mobile"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColorHighlight="@color/white"
+                android:textSize="15dp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/group_row"
+                android:ellipsize="start"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="Select City"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="15dp" />
+
+            <requestFocus />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                app:cardCornerRadius="5dp">
+
+                <TextView
+                    android:id="@+id/hotelnotfound"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Select Hotel name and location"
+                    android:textSize="15dp" />
+
+                <fragment
+                    android:id="@+id/map1"
+                    android:name="com.google.android.gms.maps.MapFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginBottom="10dp" />
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/gray_btn_bg_color"
+                android:clickable="false"
+                android:onClick="account"
+                android:text="Create Account"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/login_link"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:onClick="nonmember1"
+                android:text="Already a member? Login"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="topFiveLiveOffer"
+            type="com.cheqin.booking.mappager.model.TopFiveLiveOffer" />
+
+        <variable
+            name="result"
+            type="com.cheqin.booking.modelplaces.Result" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            tools:context=".mappager.BotelDetailsActivity"
+            tools:showIn="@layout/activity_botel_details">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/botel_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="4dp"
+                android:layout_toLeftOf="@id/btnConfirmTop"
+                android:padding="10dp"
+                android:text="@{result.name}"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="parent"
+                tools:text="Hotel Jayanagr right wing hotel in an" />
+
+            <com.cheqin.booking.utils.CustomFontButton
+                android:id="@+id/btnConfirmTop"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:background="@drawable/btn_login_bg"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/botel_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/botel_name"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:text="@{result.formattedAddress}"
+                android:textSize="15sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/review_summary_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/botel_address"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:text="Review summary"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/ratings"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@id/review_summary_title"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/botel_name"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/reviews_google" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/total_Reviews_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/botel_name"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/material_blue_grey_95"
+                        android:textSize="40sp"
+                        android:textStyle="normal" />
+
+                    <androidx.appcompat.widget.AppCompatRatingBar
+                        android:id="@+id/hotel_ratings"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:isIndicator="true"
+                        android:theme="@style/RatingBar" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/total_Reviews"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/botel_name"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/material_blue_grey_95"
+                        android:textSize="13sp"
+                        android:textStyle="normal" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reviews_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ratings"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            <com.cheqin.booking.utils.CustomFontButton
+                android:id="@+id/btnConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reviews_recycler_view"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_login_bg"
+                android:padding="10dp"
+                android:text="Confirm"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

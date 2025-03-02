@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:theme="@style/CustomToolbarTheme" />
+
+    <com.cheqin.booking.utils.CustomFontTextview
+        android:id="@+id/new_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Reset your Password"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="gone" />
+
+
+    <com.cheqin.booking.utils.CustomFontTextview
+        android:id="@+id/tv_enterpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/new_pass"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="90dp"
+        android:text="Enter New Password"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_enterpass"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/layout"
+        android:weightSum="3">
+
+        <EditText
+            android:id="@+id/input_passwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.20"
+            android:background="@drawable/group_row"
+            android:ellipsize="start"
+            android:gravity="center_horizontal"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/btn_visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight=".80"
+            android:src="@drawable/ic_visibility_black_18dp" />
+
+        <ImageView
+            android:id="@+id/btn_invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight=".80"
+            android:src="@drawable/ic_visibility_black_18dp"
+            android:tint="#808080"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <com.cheqin.booking.utils.CustomFontButton
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/ll"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/greybutton_s"
+        android:text="Reset"
+        android:textColor="@color/white" />
+</RelativeLayout>

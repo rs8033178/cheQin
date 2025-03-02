@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.cheqin.booking.activities.login.LoginSignupViewModel" />
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+
+
+        <com.cheqin.booking.utils.CustomFontTextview
+            android:id="@+id/phoneNumberTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:inputType="phone"
+            android:text="Phone Number : "
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/mob_text_size"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintStart_toStartOf="@id/guideStart"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.cheqin.booking.utils.CustomFontTextview
+            android:id="@+id/phoneNumberText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:inputType="phone"
+            android:text="@{model.phoneNumber}"
+            android:textColor="@color/text_grey_dark"
+            android:textSize="@dimen/mob_text_size"
+            app:layout_constraintEnd_toEndOf="@id/guideEnd"
+            app:layout_constraintStart_toEndOf="@id/phoneNumberTitle"
+            app:layout_constraintTop_toTopOf="@+id/phoneNumberTitle"
+            tools:text="9999999999" />
+
+        <ImageButton
+            android:id="@+id/editNumberBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/padding_very_small"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/edit_black"
+            android:tint="@color/text_grey_dark"
+            app:layout_constraintBottom_toBottomOf="@id/phoneNumberText"
+            app:layout_constraintEnd_toEndOf="@+id/phoneNumberText"
+            app:layout_constraintTop_toTopOf="@+id/phoneNumberText" />
+
+
+        <com.cheqin.booking.utils.CustomFontTextview
+            android:id="@+id/enterOtpText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:text="Enter OTP :"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/mob_text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/otp_view"
+            app:layout_constraintStart_toStartOf="@id/guideStart"
+            app:layout_constraintTop_toTopOf="@+id/otp_view" />
+
+
+        <in.aabhasjindal.otptextview.OtpTextView
+            android:id="@+id/otp_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_grey_dark"
+            app:bar_active_color="@color/colorAccent"
+            app:bar_enabled="true"
+            app:bar_error_color="@color/error_color"
+            app:bar_height="2dp"
+            app:layout_constraintEnd_toEndOf="@id/guideEnd"
+            app:layout_constraintStart_toEndOf="@+id/enterOtpText"
+            app:layout_constraintTop_toBottomOf="@+id/phoneNumberText"
+            app:length="4"
+            app:otp_text_size="18sp">
+
+
+        </in.aabhasjindal.otptextview.OtpTextView>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/resendText"
+            app:layout_constraintVertical_bias="0" />
+
+        <com.cheqin.booking.utils.CustomFontTextview
+            android:id="@+id/error_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/error_color"
+            android:textSize="@dimen/text_size_twelve"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/guideEnd"
+            app:layout_constraintStart_toStartOf="@id/otp_view"
+            app:layout_constraintTop_toBottomOf="@id/otp_view"
+            tools:text="Wrong Otp Entered"
+            tools:visibility="visible" />
+
+        <com.cheqin.booking.utils.CustomFontTextview
+            android:id="@+id/resendText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_twelve"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@id/guideEnd"
+            app:layout_constraintStart_toStartOf="@+id/resendOTP"
+            app:layout_constraintTop_toBottomOf="@id/resendOTP"
+            tools:text="We have sent you OTP message , You can resend in"
+            tools:visibility="visible" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/otp_viewGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:constraint_referenced_ids="enterOtpText,otp_view" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/resendOTP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_mini"
+            android:background="@drawable/otp_resend_button"
+            android:elevation="6dp"
+            android:enabled="false"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/padding"
+            android:paddingTop="@dimen/padding_small"
+            android:paddingRight="@dimen/padding"
+            android:paddingBottom="@dimen/padding_small"
+            android:text="Resend OTP"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/mob_text_size"
+            android:visibility="visible"
+            app:layout_constraintEnd_toStartOf="@id/submitOtp"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="@id/guideStart"
+            app:layout_constraintTop_toBottomOf="@id/top_content_barrier" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/submitOtp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@drawable/btn_login_bg"
+            android:elevation="6dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:paddingLeft="@dimen/padding"
+            android:paddingTop="@dimen/padding_small"
+            android:paddingRight="@dimen/padding"
+            android:paddingBottom="@dimen/padding_small"
+            android:text="Submit OTP"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/mob_text_size"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@id/guideEnd"
+            app:layout_constraintStart_toEndOf="@id/resendOTP"
+            app:layout_constraintTop_toBottomOf="@id/top_content_barrier" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/top_content_barrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="error_text,otp_view"
+            tools:layout_editor_absoluteY="785dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

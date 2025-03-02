@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_login_plain_bg"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="See list"
+        android:id="@+id/see_list_offers"
+        android:textAllCaps="false"
+        android:textColor="#ffffff" />
+
+   <androidx.core.view.ViewPager
+       android:id="@+id/bottom_sheet_viewpager"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+
+
+
+</LinearLayout>

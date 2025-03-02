@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="topFiveLiveOffer"
+            type="com.cheqin.booking.mappager.model.TopFiveLiveOffer" />
+
+        <variable
+            name="onclick"
+            type="android.view.View.OnClickListener" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hotel_card_height"
+        android:layout_margin="@dimen/margin_small">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hotel_card_height"
+            android:orientation="vertical"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/map_corner_rad"
+            app:cardElevation="@dimen/map_card_elevation"
+            app:contentPadding="@dimen/padding">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/hotel_name_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="64dp"
+                    android:orientation="vertical"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintEnd_toStartOf="@id/navBarrier"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/hotel_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_micro"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/text_size_medium_plus"
+                        android:textStyle="bold"
+                        tools:text="MMewjewjnkwjkn MMewjewjnkwjkn MMewjewjnkwjkn" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/hotel_name_fake"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_micro"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/text_size_medium_plus"
+                        android:textStyle="bold"
+                        tools:text="M" />
+
+                    <TextView
+                        android:id="@+id/hotelType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_twelve"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        tools:text="typeof hotel"
+                        tools:visibility="visible" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/hotelRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:background="@color/google_review_color"
+                    android:clickable="true"
+                    android:includeFontPadding="true"
+                    android:onClick="@{(v) -> onclick.onClick(v)}"
+                    android:paddingLeft="@dimen/margin_micro"
+                    android:paddingRight="@dimen/margin_micro"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_twelve"
+                    android:visibility="invisible"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBottom_toBottomOf="@id/upperRatingBar"
+                    app:layout_constraintStart_toStartOf="@id/hotel_name_container"
+                    tools:text="rating"
+                    tools:visibility="visible" />
+
+                <io.techery.properratingbar.ProperRatingBar
+                    android:id="@+id/upperRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:onClick="@{(v) -> onclick.onClick(v)}"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toEndOf="@+id/hotelRating"
+                    app:layout_constraintTop_toBottomOf="@id/hotel_name_container"
+                    app:prb_clickable="false"
+                    app:prb_defaultRating="3"
+                    app:prb_symbolicTickNormalColor="@android:color/darker_gray"
+                    app:prb_symbolicTickSelectedColor="@color/colorPrimaryDark"
+                    app:prb_tickNormalDrawable="@drawable/ic_star_normal"
+                    app:prb_tickSelectedDrawable="@drawable/ic_star_selected"
+                    app:prb_tickSpacing="1dp"
+                    app:prb_totalTicks="5" />
+
+
+                <TextView
+                    android:id="@+id/hotelReviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_mini"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@color/google_review_color"
+                    android:clickable="true"
+                    android:onClick="@{(v) -> onclick.onClick(v)}"
+                    android:padding="@dimen/margin_micro"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_twelve"
+                    android:visibility="invisible"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintBottom_toBottomOf="@id/upperRatingBar"
+                    app:layout_constraintEnd_toStartOf="@+id/navBarrier"
+                    app:layout_constraintHorizontal_bias="0.019"
+                    app:layout_constraintStart_toEndOf="@id/upperRatingBar"
+                    app:layout_constraintTop_toBottomOf="@id/hotel_name_container"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:text="Reviews"
+                    tools:visibility="visible" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/hotel_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="@dimen/margin_micro"
+                    android:ellipsize="none"
+                    android:maxLines="2"
+                    android:minLines="2"
+                    android:text="@{topFiveLiveOffer.onbehalfHotelAddr}"
+                    android:textColor="@color/gray_shade_7"
+                    android:textSize="@dimen/text_size_twelve"
+                    app:layout_constraintEnd_toStartOf="@id/navBarrier"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/hotelReviews"
+                    tools:text="M G Rd, KG Halli, D' Souza Layout, Ashok Nagar,D' Souza LayoutD' Souza Layout,M G Rd,M G Rd,M G Rd,M G Rd,M G Rd" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/navigate_to_hotel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_small"
+                    android:rotation="40"
+                    android:src="@drawable/ic_navigation"
+                    android:tint="@color/google_review_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"  />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/launch_uber"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/uber"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/uber_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:autoSizeMinTextSize="12sp"
+                    android:autoSizeStepGranularity="2sp"
+                    android:autoSizeTextType="uniform"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="Uber"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="@id/launch_uber"
+                    app:layout_constraintStart_toStartOf="@id/launch_uber"
+                    app:layout_constraintTop_toBottomOf="@id/launch_uber" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/offer_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:drawableStart="@drawable/ic_location"
+                    android:drawableLeft="@drawable/ic_location"
+                    android:drawableTint="@color/colorPrimaryDark"
+                    android:gravity="bottom"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/gray_shade_7"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="normal"
+                    app:layout_constrainedWidth="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/navigate_to_hotel"
+                    tools:text="0.98Kms" />
+
+                <androidx.constraintlayout.widget.Barrier
+                    android:id="@+id/navBarrier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:barrierDirection="start"
+                    app:constraint_referenced_ids="offer_distance,navigate_to_hotel,see_details" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/offer_room_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="false"
+                    android:layout_centerInParent="false"
+                    android:layout_marginTop="4dp"
+                    android:text="Room Type: "
+                    android:textColor="@color/gray_shade_7"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/hotel_address" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/offer_room"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="false"
+                    android:layout_marginEnd="@dimen/margin_micro"
+                    android:maxLines="2"
+                    android:textColor="@color/gray_shade_7"
+                    android:textSize="@dimen/text_size_medium"
+                    app:layout_constraintEnd_toStartOf="@+id/navBarrier"
+                    app:layout_constraintStart_toEndOf="@id/offer_room_heading"
+                    app:layout_constraintTop_toTopOf="@id/offer_room_heading"
+                    tools:text="Deluxe,Deluxe,Deluxe,Deluxe,Deluxe,Deluxe" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/price_place_holder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="false"
+                    android:layout_centerInParent="false"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="@string/bargained_offer"
+                    android:textColor="@color/gray_shade_7"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/see_details"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/see_details" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/offer_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/price_place_holder"
+                    android:layout_toRightOf="@id/price_place_holder"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/see_details"
+                    app:layout_constraintStart_toEndOf="@id/price_place_holder"
+                    app:layout_constraintTop_toTopOf="@+id/see_details"
+                    tools:text="₹ 400" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/see_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/button_accent"
+                    android:minHeight="0dp"
+                    android:padding="5dp"
+                    android:text="More Details"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/navBarrier"
+                    app:layout_constraintTop_toBottomOf="@+id/offer_room" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/see_details" />
+
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/rating_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:constraint_referenced_ids="hotelRating,upperRatingBar"
+                    tools:visibility="visible" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</layout>

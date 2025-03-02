@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@id/bottomButton"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingRight="20dp">
+
+            <RadioGroup
+                android:id="@+id/rg_booking_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="56dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_hotels"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="Hotel/Stays" />
+
+                <RadioButton
+                    android:id="@+id/rb_wedding"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Wedding/Banquet/Exhibition Halls" />
+
+            </RadioGroup>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_city_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg_booking_type"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:id="@+id/change_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight=".3"
+                        android:background="@drawable/group_row1"
+                        android:paddingTop="3dp"
+                        android:src="@drawable/location_icon"
+                        android:tint="#EE0202"
+                        android:visibility="visible" />
+
+                    <com.cheqin.booking.User.DelayAutoCompleteTextView
+                        android:id="@+id/autoCompleteTextView_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.4"
+                        android:background="@drawable/group_row1"
+                        android:hint="@string/enter_city"
+                        android:inputType="textAutoComplete|textNoSuggestions"
+                        android:lines="1"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="15sp" />
+
+
+                    <ImageView
+                        android:id="@+id/clear_butt_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".3"
+                        android:background="@drawable/group_row1"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_cancel_white_18dp"
+                        android:tint="#EE0202"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/nav_butt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".3"
+                        android:background="@drawable/group_row1"
+                        android:clickable="true"
+                        android:padding="5dp"
+                        android:rotation="40"
+                        android:src="@drawable/ic_navigation"
+                        android:tint="#1C7FD7"
+                        android:visibility="visible" />
+                    <!--<requestFocus />-->
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/auto_visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_city_select"
+                android:layout_marginBottom="20dp"
+                android:paddingBottom="10dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/change_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_weight=".3"
+                        android:background="@drawable/group_row1"
+                        android:paddingTop="3dp"
+                        android:src="@drawable/location_icon"
+                        android:tint="#EE0202"
+                        android:visibility="visible" />
+
+
+                    <com.cheqin.booking.User.DelayAutoCompleteTextView
+                        android:id="@+id/autoCompleteTextView_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.4"
+                        android:background="@drawable/group_row1"
+                        android:hint="Enter Area"
+                        android:inputType="textAutoComplete|textNoSuggestions"
+                        android:lines="1"
+                        android:padding="15dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="15sp">
+
+
+                    </com.cheqin.booking.User.DelayAutoCompleteTextView>
+
+                    <ImageView
+                        android:id="@+id/clear_butt_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".3"
+                        android:background="@drawable/group_row1"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_cancel_white_18dp"
+                        android:tint="#EE0202"
+                        android:visibility="gone" />
+                    <!--<requestFocus />-->
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/container_hotel_booking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/auto_visible"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                tools:visibility="gone">
+
+                <include layout="@layout/layout_booking_basis" />
+                <!-- Night basis -->
+                <include layout="@layout/layout_booking_night_basis" />
+
+                <!-- HOURLY BASIS-->
+                <include layout="@layout/layout_hourly_basis" />
+
+
+                <include layout="@layout/layout_booking_person_selection" />
+
+                <include layout="@layout/layout_group_booking" />
+
+                <include layout="@layout/layout_booking_amenities_class" />
+
+                <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/card_curr_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:visibility="visible"
+                    tools:showIn="@layout/layout_user_booking">
+
+                    <LinearLayout
+                        android:id="@+id/linearRoomType"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight=".5"
+                        android:background="#ffffff"
+                        android:orientation="vertical">
+
+                        <com.cheqin.booking.utils.CustomFontTextview
+                            android:id="@+id/textView19"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_horizontal"
+                            android:paddingBottom="5dp"
+                            android:text="Room Category"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                        <com.cheqin.booking.utils.CustomFontTextview
+                            android:id="@+id/roomType_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="5dp"
+                            android:text="select"
+                            android:textColor="@color/colorPrimaryDark" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_wedding_booking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/auto_visible"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                android:paddingBottom="32dp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <RadioGroup
+                    android:id="@+id/wedding_date_selection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_specific_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="Specific Date" />
+
+                    <RadioButton
+                        android:id="@+id/rb_flexible_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Flexible Date(s)" />
+
+                </RadioGroup>
+
+
+                <com.cheqin.booking.utils.CustomFontTextview
+                    android:id="@+id/textview_selected_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="Select Event Date"
+                    android:textColor="@color/utel_color"
+                    android:textSize="18sp"
+                    tools:text="27 January,2020" />
+
+                <LinearLayout
+                    android:id="@+id/ll_wedding_guest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Guests/Attendees"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/edt_guest_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:maxLength="4"
+                            android:text="100" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_venue_selection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical"
+                    android:minHeight="48dp"
+                    android:orientation="horizontal">
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:id="@+id/textview_venue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Venue"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:id="@+id/textview_selected_venue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Select Venue"
+                        android:textColor="@color/utel_color"
+                        android:textSize="16sp"
+                        tools:text="Mantapa" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_service_selection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical"
+                    android:minHeight="48dp"
+                    android:orientation="horizontal">
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:id="@+id/textview_additonal_services"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Additional Services"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textview_selected_services"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Select Services"
+                        android:textColor="@color/utel_color"
+                        android:textSize="16sp"
+                        tools:text="2 selected" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/container_budget_venue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="Budget for Venue"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/rs_symbol1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/rs"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/edt_budget_venue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@+id/rs_symbol1"
+                            android:inputType="numberDecimal"
+                            android:minEms="5" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/container_budget_services"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="Budget for Services"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/rs_symbol2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/rs"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/edt_budget_services"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@+id/rs_symbol2"
+                            android:inputType="numberDecimal"
+                            android:minEms="5" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottomButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/grand_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="gone"
+            tools:text="$3388388484"
+            tools:visibility="visible" />
+
+        <com.cheqin.booking.utils.CustomFontButton
+            android:id="@+id/post_request"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="bottom"
+            android:background="@drawable/btn_login_bg"
+            android:text="@string/ambercent"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

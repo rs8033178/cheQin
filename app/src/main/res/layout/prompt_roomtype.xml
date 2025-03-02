@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <com.cheqin.booking.utils.CustomFontTextview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        android:text="Room Category"
+        android:textColor="@color/red"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ebebeb" />
+
+    <ListView
+        android:id="@+id/room_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:cacheColorHint="#f8f8ff"
+        android:choiceMode="singleChoice"
+        android:divider="#ebebeb"
+        android:dividerHeight="1dp"
+        android:fadeScrollbars="true"
+        android:fastScrollEnabled="true"
+        android:footerDividersEnabled="true"
+        android:textFilterEnabled="true" />
+
+    <com.cheqin.booking.utils.CustomFontButton
+        android:id="@+id/roomtype_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_login_plain_bg"
+        android:text="Ok"
+        android:textColor="#ffffff"
+        android:visibility="gone" />
+
+</LinearLayout>

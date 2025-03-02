@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startguide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/endGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".95" />
+
+    <com.cheqin.booking.utils.CustomFontTextview
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="@string/confirmationHeadingText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        app:fontNameType="bold"
+        app:layout_constraintStart_toStartOf="@+id/startguide"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.cheqin.booking.utils.CustomFontTextview
+        android:id="@+id/adultHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_mini"
+        android:text="@string/adultText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/black"
+        app:fontNameType="bold"
+        app:layout_constraintStart_toStartOf="@+id/startguide"
+        app:layout_constraintTop_toBottomOf="@id/heading" />
+
+    <com.cheqin.booking.utils.CustomFontTextview
+        android:id="@+id/adultValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_mini"
+        android:layout_marginTop="@dimen/margin_mini"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/headingBarrier"
+        app:layout_constraintTop_toBottomOf="@id/heading"
+        tools:text="@string/adultText" />
+
+    <com.cheqin.booking.utils.CustomFontTextview
+        android:id="@+id/roomHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_mini"
+        android:text="@string/rooms_heading"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/black"
+        app:fontNameType="bold"
+        app:layout_constraintStart_toStartOf="@+id/startguide"
+        app:layout_constraintTop_toBottomOf="@id/adultHeading" />
+
+    <com.cheqin.booking.utils.CustomFontTextview
+        android:id="@+id/roomvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_mini"
+        android:layout_marginTop="@dimen/margin_mini"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/black"
+        app:fontNameType="normal"
+        app:layout_constraintStart_toStartOf="@+id/headingBarrier"
+        app:layout_constraintTop_toBottomOf="@id/adultHeading"
+        tools:text="@string/rooms_heading" />
+
+    <com.cheqin.booking.utils.CustomFontTextview
+        android:id="@+id/nightHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_mini"
+        android:text="@string/nights_heading"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/black"
+        app:fontNameType="bold"
+        app:layout_constraintStart_toStartOf="@id/startguide"
+        app:layout_constraintTop_toBottomOf="@id/roomHeading" />
+
+    <com.cheqin.booking.utils.CustomFontTextview
+        android:id="@+id/nightvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_mini"
+        android:layout_marginTop="@dimen/margin_mini"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/black"
+        app:fontNameType="normal"
+        app:layout_constraintStart_toStartOf="@id/headingBarrier"
+        app:layout_constraintTop_toBottomOf="@id/roomHeading"
+        tools:text="@string/nights_heading" />
+
+    <com.cheqin.booking.utils.CustomFontTextview
+        android:id="@+id/hotelClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_mini"
+        android:text="@string/hotel_class"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/black"
+        app:fontNameType="bold"
+        app:layout_constraintStart_toStartOf="@+id/startguide"
+        app:layout_constraintTop_toBottomOf="@id/nightHeading" />
+
+    <com.cheqin.booking.utils.CustomFontTextview
+        android:id="@+id/hotelClassValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_mini"
+        android:layout_marginTop="@dimen/margin_mini"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/black"
+        app:fontNameType="normal"
+        app:layout_constraintStart_toStartOf="@+id/headingBarrier"
+        app:layout_constraintTop_toBottomOf="@id/nightHeading"
+        tools:text="Resort and spa" />
+
+    <com.cheqin.booking.utils.CustomFontTextview
+        android:id="@+id/selectedRoomHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_mini"
+        android:text="@string/room_type"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/black"
+        app:fontNameType="bold"
+        app:layout_constraintStart_toStartOf="@+id/startguide"
+        app:layout_constraintTop_toBottomOf="@id/hotelClass" />
+
+    <com.cheqin.booking.utils.CustomFontTextview
+        android:id="@+id/selectedvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_mini"
+        android:layout_marginTop="@dimen/margin_mini"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/black"
+        app:fontNameType="normal"
+        app:layout_constraintStart_toStartOf="@+id/headingBarrier"
+        app:layout_constraintTop_toBottomOf="@id/hotelClass"
+        tools:text="@string/selected_rooms_heading" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/proceedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="?attr/selectableItemBackground"
+        android:text="@string/proceed_button_text"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="@id/endGuide"
+        app:layout_constraintTop_toBottomOf="@id/buttonTop" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cancleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="?attr/selectableItemBackground"
+        android:text="@string/cancel"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toStartOf="@id/proceedButton"
+        app:layout_constraintTop_toBottomOf="@id/buttonTop" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/headingBarrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="roomHeading,selectedRoomHeading,adultHeading,nightHeading" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/buttonTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="nightHeading,nightvalue,roomvalue,adultValue,adultHeading,selectedRoomHeading,selectedvalue,roomHeading,heading"
+        tools:layout_editor_absoluteY="773dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

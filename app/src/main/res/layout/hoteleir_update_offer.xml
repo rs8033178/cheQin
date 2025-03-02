@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/CustomToolbarTheme"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <com.cheqin.booking.utils.CustomFontTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Requested Offer"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:orientation="vertical">
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Rooms"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#80000000" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/room_icon" />
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:id="@+id/post_rooms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="1"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#444343" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Adults"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#80000000" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/adults_icon" />
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:id="@+id/post_adults"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="2"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#444343" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:id="@+id/com.cheqin.booking.utils.CustomFontTextview7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Children"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#80000000" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="9dp"
+                        android:src="@drawable/child_icon" />
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:id="@+id/post_children"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="0"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#444343" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="105dp">
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="55dp"
+                        android:text="Checkin"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/transparent_black" />
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Checkout"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/transparent_black" />
+                </LinearLayout>
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:paddingLeft="120dp"-->
+                <!--android:paddingTop="5dp">-->
+
+
+                <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingRight="85dp"-->
+                <!--android:src="@drawable/date_post" />-->
+
+                <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/date_post" />-->
+                <!--</LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:id="@+id/post_check_in"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="95dp"
+                        android:paddingRight="31dp"
+                        android:text="25/12/2015"
+                        android:textColor="@color/black" />
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:id="@+id/post_check_out"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30/12/2015"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Budget"
+                        android:textColor="@color/transparent_black"
+                        android:textSize="15sp"
+                        android:layout_weight="1.5"
+                        android:visibility="gone"/>
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:id="@+id/post_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:text="6,000"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_weight=".5"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="2">
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Hotel Class"
+                        android:textSize="15sp"
+                        android:textColor="@color/transparent_black"
+                        android:layout_weight="1.5"/>
+
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:id="@+id/post_hotel_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="4 Star(****)"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:layout_weight=".5"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#80000000"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:weightSum="2"
+                    android:visibility="gone">
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Lowest Offer"
+                        android:textSize="15sp"
+                        android:textColor="@color/transparent_black"
+                        android:layout_weight="1.5"/>
+
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:id="@+id/txt_lowest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="lowest"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:layout_weight=".5"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#80000000"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Offered Price"
+                        android:textColor="@color/transparent_black"
+                        android:textSize="15sp" />
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:id="@+id/posted_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="6000"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp">
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Offered Secret Price"
+                        android:textSize="15sp"
+                        android:textColor="@color/transparent_black" />
+
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:id="@+id/posted_min_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="5000"
+                        android:textSize="15sp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp">
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Offered Expiry Time"
+                        android:textSize="15sp"
+                        android:textColor="@color/transparent_black" />
+
+
+                    <com.cheqin.booking.utils.CustomFontTextview
+                        android:id="@+id/posted_expiry_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="123"
+                        android:textSize="15sp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="40dp"
+                android:background="#bcbbbb"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:weightSum="1">
+
+                        <com.cheqin.booking.utils.CustomFontTextview
+                            android:id="@+id/txt_offer_price_field"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="Offer price ($)"
+                            android:textColor="#444343"
+                            android:textSize="16dp" />
+
+                        <com.cheqin.booking.utils.CustomFontEdittext
+                            android:id="@+id/update_price"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:maxLength="7" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:weightSum="1">
+
+                        <com.cheqin.booking.utils.CustomFontTextview
+                            android:id="@+id/txt_secret_price_field"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="Secret price ($)"
+                            android:textColor="#444343"
+                            android:textSize="16dp" />
+
+                        <com.cheqin.booking.utils.CustomFontEdittext
+                            android:id="@+id/update_min_price"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:ems="10"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLength="7" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:weightSum="1">
+
+                        <com.cheqin.booking.utils.CustomFontTextview
+                            android:id="@+id/com.cheqin.booking.utils.CustomFontTextview9"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="Expiry time"
+                            android:textColor="#444343"
+                            android:textSize="16dp" />
+
+                        <com.cheqin.booking.utils.CustomFontTextview
+                            android:id="@+id/update_expiry_time"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="123" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                            android:id="@+id/discrete1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                             />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/update_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_login_plain_bg"
+            android:text="Update"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/inputParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:ccp_textSize="@dimen/mob_text_size"
+            app:ccp_enableHint="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.cheqin.booking.utils.CustomFontEdittext
+            android:id="@+id/mobile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:inputType="phone"
+            android:textColor="@color/gray_shade_7"
+            android:textColorHint="@color/gray_shade_10"
+            android:textSize="@dimen/mob_text_size"
+            android:hint="Enter your mobile number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ccp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="@id/mobile"
+            app:layout_constraintStart_toStartOf="@id/mobile"
+            app:layout_constraintTop_toBottomOf="@id/mobile" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--        <com.cheqin.booking.utils.CustomFontTextview-->
+    <!--            android:id="@+id/tv_error_text"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="@string/error_no_mobile"-->
+    <!--            android:textColor="@color/error_color"-->
+    <!--            android:textSize="@dimen/text_size_twelve"-->
+    <!--            android:visibility="invisible"-->
+    <!--            tools:visibility="visible" />-->
+</layout>

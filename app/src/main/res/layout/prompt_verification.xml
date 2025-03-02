@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp"
+    android:orientation="vertical">
+
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:text="Admin Approval Required"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:id="@+id/textView11" />-->
+
+    <com.cheqin.booking.utils.CustomFontTextview
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Your acccount hasn't been approved by admin yet. If you haven't submitted your ID proof, please submit or else contact us."
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/textView12" />
+
+    <com.cheqin.booking.utils.CustomFontButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Upload ID proof"
+        android:textColor="@color/black"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/upload_id" />
+
+    <com.cheqin.booking.utils.CustomFontButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact us"
+        android:textColor="@color/black"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btn_contact" />
+
+    <com.cheqin.booking.utils.CustomFontButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check Verification Status"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btn_verific" />
+
+    <com.cheqin.booking.utils.CustomFontButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textColor="@color/red"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btn_cancel" />
+
+
+</LinearLayout>
