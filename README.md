@@ -28,9 +28,9 @@ Get real-time access to the top three lowest offers from hoteliers (or related s
     <td><img src="screenshots/c4.png" width="300"/></td>
     <td><img src="screenshots/c5.png" width="300"/></td>
     <td><img src="screenshots/c6.png" width="300"/></td>
+    <td><img src="screenshots/c9.png" width="300"/></td>
   </tr>
    <tr>
-    <td><img src="screenshots/c9.png" width="300"/></td>
     <td><img src="screenshots/c10.png" width="300"/></td>
   </tr>
 </table>
